@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="./asset/css/webFonts.css" rel="stylesheet" type="text/css" />
+    <link href="./asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="./asset/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="./asset/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="./asset/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="./asset/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./asset/js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./asset/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="./asset/js/dragscroll/dragscroll.js"></script>
+    <script type="text/javascript" src="./asset/js/sticky/jquery.sticky.js"></script>
+    <script type="text/javascript" src="./asset/js/tweenmax/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./asset/js/tweenmax/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="./asset/js/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="./asset/js/selectric/jquery.selectric.min.js"></script>
+    <script type="text/javascript" src="./asset/js/ui.js"></script>
+    <title>idasystem</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerWrap">
+            <div class="statusWrap">
+                <h1 class="logo"><a href="#a;">idasystem</a></h1>
+                <ul>
+                    <li class="logout">
+                        <a href="#a;">로그아웃</a>
+                    </li>
+                    <li class="manager">
+                        <i class="profile" style="background: url(asset/images/common/img_manager.png) no-repeat 50% 50%;"></i>
+                        <span class="name">조인성</span>
+                    </li>
+                    <li class="time">
+                        <i class="ico"></i>
+                        <span class="now">2021.03.08 12:40:13</span>
+                    </li>
+                    <li class="ip">
+                        <span class="title">IP</span>
+                        <span class="address">211.118.108.207</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="menuWrap">
+                <div class="menuBtn">
+                    <a href="#a;" class="menu"></a>
+                </div>
+                <div class="snb">
+                    <!-- <a href="#a;" class="depth1"><span class="ico icon1">서비스 관리(1뎁스)</span></a> -->
+                    <a href="#a;" class="depth1">
+                        <div class="iconArea icon"><i class="dash menu01"></i></div>
+                        <span class="font">서비스 관리(1뎁스)</span>
+                    </a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#a;">서비스관리 2뎁스-1</a>
+                                <div class="depth3">
+                                    <ul>
+                                        <li>
+                                            <a href="#a;">서비스관리 3뎁스-1</a>
+                                            <div class="depth4">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#a;">서비스관리 4뎁스-1</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#a;">서비스관리 4뎁스-2</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#a;">서비스관리 3뎁스-2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#a;">서비스관리 3뎁스-3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#a;">서비스관리 2뎁스-2</a>
+                                <div class="depth3">
+                                    <ul>
+                                        <li>
+                                            <a href="#a;">서비스관리 3뎁스-1</a>
+                                            <div class="depth4">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#a;">서비스관리 4뎁스-1</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#a;">서비스관리 4뎁스-2</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="naviWrap">
+                <div class="scrollWrap">
+                    <ul class="naviDep1">
+                        <li>
+                            <a href="#a;">서비스 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">회원 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">관리자 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">시스템 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">메뉴명</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">메뉴명</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">메뉴명</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">메뉴명</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">메뉴명</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                                <li><a href="#a;">서브메뉴1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body contentsWrap">
+        <div class="contents">
+            <!-- 타이틀 영역 -->
+            <div class="wrap">
+                <p class="mainTitle">메뉴별 컨텐츠 관리</p>
+            </div>
+            <!-- //타이틀 영역 -->
+            <!-- 컨텐츠 영역 -->
+            <div class="wrap">
+                <div class="searchWrap">
+                    <div class="searchInWrap">
+                        <div class="boxWrap paddingR20">
+                            <div class="box width25">
+                                <div class="title">키워드</div>
+                                <div class="width30 inBlock paddingR5">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                                <div class="width70 inBlock">
+                                    <label for="" class="invisible"></label>
+                                    <input type="text" name="" id="">
+                                </div>
+                            </div>
+                            <div class="box width25">
+                                <div class="title">강좌구분</div>
+                                <div>
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box width50">
+                                <div class="title">기간</div>
+                                <div class="width20 inBlock paddingR5">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                                <div class="width80 inBlock">
+                                    <div class="calendarWrap">
+                                        <label for="ctrtYmdFr" class="invisible">기간</label>
+                                        <div class="flex">
+                                            <input type="text" id="ctrtYmdFr" name="ctrtYmdFr" title="시작일" class="datepic" value="">
+                                            <span class="part">~</span>
+                                            <input type="text" id="ctrtYmdTo" name="ctrtYmdTo" title="종료일" class="datepic" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxWrap marginT5 paddingR20">
+                            <div class="box width25">
+                                <div class="title">구비서류 제출여부</div>
+                                <label for="" class="invisible"></label>
+                                <select name="" id="">
+                                    <option value="">option</option>
+                                    <option value="">option2</option>
+                                    <option value="">option3</option>
+                                </select>
+                            </div>
+                            <div class="box width25">
+                                <div class="title">교육이력여부</div>
+                                <div>
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box width50">
+                                <div class="title">프로그램</div>
+                                <div class="width20 inBlock paddingR5">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                                <div class="width80 inBlock">
+                                    <div class="calendarWrap">
+                                        <label for="ctrtYmdFr" class="invisible">기간</label>
+                                        <div class="flex">
+                                            <input type="text" id="ctrtYmdFr" name="ctrtYmdFr" title="시작일" class="datepic" value="">
+                                            <span class="part">~</span>
+                                            <input type="text" id="ctrtYmdTo" name="ctrtYmdTo" title="종료일" class="datepic" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#a;" class="btn search">검색</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="wrap">
+                <div class="searchWrap">
+                    <div class="searchInWrap">
+                        <div class="flex">
+                            <div class="width25 flex marginR20">
+                                <div class="width30 alignCenter">키워드</div>
+                                <div class="width30 marginR5">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                                <div class="width40">
+                                    <label for="" class="invisible"></label>
+                                    <input type="text" name="" id="">
+                                </div>
+                            </div>
+                            <div class="width25 flex marginR20">
+                                <div class="width30 alignCenter">강좌구분</div>
+                                <div class="width70">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="width50 flex">
+                                <div class="width15 alignCenter">강좌구분</div>
+                                <div class="width20 marginR5">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                                <div class="width65">
+                                    <div class="calendarWrap">
+                                        <label for="ctrtYmdFr" class="invisible">기간</label>
+                                        <div class="flex">
+                                            <input type="text" id="ctrtYmdFr" name="ctrtYmdFr" title="시작일" class="datepic" value="">
+                                            <span class="part">~</span>
+                                            <input type="text" id="ctrtYmdTo" name="ctrtYmdTo" title="종료일" class="datepic" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex marginT5">
+                            <div class="width25 flex marginR20">
+                                <div class="width30 alignCenter">구비서류 제출여부</div>
+                                <div class="width70">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="width25 flex marginR20">
+                                <div class="width30 alignCenter">교육이력여부</div>
+                                <div class="width70">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="width50 flex">
+                                <div class="width15 alignCenter">프로그램</div>
+                                <div class="width85">
+                                    <label for="" class="invisible"></label>
+                                    <select name="" id="">
+                                        <option value="">option</option>
+                                        <option value="">option2</option>
+                                        <option value="">option3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#a;" class="btn search">검색</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="wrap">
+                <div class="flex">
+                    <div class="width20" style="background: beige; height: 300px;">20</div>
+                    <div class="width80" style="background: bisque;height: 300px;">80</div>
+                </div>
+                <div class="flex">
+                    <div class="width35" style="background: burlywood;height: 300px;">35</div>
+                    <div class="width25" style="background: aliceblue;height: 300px;">25</div>
+                    <div class="width40" style="background: beige;height: 300px;">40</div>
+                </div>
+            </div>
+            <div class="wrap">
+                <!-- input -->
+                <div class="maginT10 flex">
+                    <div class="width95 marginR10">
+                        <input type="text" name="" id="" class="">
+                    </div>
+                    <div class="width5">
+                        <a href="#a;" class="btn do">버튼</a>
+                    </div>
+                </div>
+                <div class="marginT10">
+                    <input type="text" name="" id="" disabled="disabled" placeholder="disabled">
+                </div>
+                <div class="marginT10 flex">
+                    <div class="width50 marginR20">
+                        <input type="text" name="" id="" class="">
+                    </div>
+                    <div class="width50 helpTxt">※ 비밀번호는 문자, 숫자, 특수문자(!,@,#,$,%,^,&,*,?,_,~,(,),-,=,+)의 조합으로 9~12자리로 입력해주세요.</div>
+                </div>
+                <!-- select -->
+                <div class="marginT10">
+                    <select name="" id="">
+                        <option value="">option</option>
+                        <option value="">option2</option>
+                        <option value="">option3</option>
+                    </select>
+                </div>
+                <!-- radio -->
+                <div class="marginT10">
+                    <div class="radioWrap">
+                        <input type="radio" name="radio" id="radio1">
+                        <label for="radio1">사용</label>
+                    </div>
+                    <div class="radioWrap">
+                        <input type="radio" name="radio" id="radio2">
+                        <label for="radio2">미사용</label>
+                    </div>
+                </div>
+                <div class="marginT10">
+                    <div class="chkWrap">
+                        <input type="checkbox" name="chk1" id="chk1">
+                        <label for="chk1">체크박스1</label>
+                    </div>
+                    <div class="chkWrap">
+                        <input type="checkbox" name="chk2" id="chk2">
+                        <label for="chk2">체크박스2</label>
+                    </div>
+                    <div class="chkWrap">
+                        <input type="checkbox" name="chk3" id="chk3">
+                        <label for="chk3">체크박스3</label>
+                    </div>
+                </div>
+                <!-- 달력 -->
+                <div class="calendarWrap marginT10">
+                    <label for="ctrtYmdFr" class="invisible">기간</label>
+                    <div class="flex">
+                        <input type="text" id="ctrtYmdFr" name="ctrtYmdFr" title="시작일" class="datepic" value="">
+                        <span class="part">~</span>
+                        <input type="text" id="ctrtYmdTo" name="ctrtYmdTo" title="종료일" class="datepic" value="">
+                    </div>
+                </div>
+                <!-- //달력 -->
+                <!-- button -->
+                <div class="btnWrap marginT40">
+                    <a href="#a;" class="btn large do">수정</a>
+                    <a href="#a;" class="btn large undo">목록으로 되돌아가기</a>
+                </div>
+                <div class="btnWrap right marginT10">
+                    <a href="#a;" class="btn medium do">수강신청처리중</a>
+                    <a href="#a;" class="btn medium do">저장</a>
+                </div>
+                <div class="btnWrap left marginT10">
+                    <a href="#a;" class="btn small do">수정</a>
+                    <a href="#a;" class="btn small undo">삭제</a>
+                    <a href="#a;" class="btn small list">목록</a>
+                </div>
+                <!-- paging -->
+                <div class="paging">
+                    <a href="#a;" class="first">첫 페이지</a>
+                    <a href="#a;" class="prev">이전 페이지</a>
+                    <a href="#a;"><strong>1</strong></a>
+                    <a href="#a;">2</a>
+                    <a href="#a;">3</a>
+                    <a href="#a;">4</a>
+                    <a href="#a;">5</a>
+                    <a href="#a;">6</a>
+                    <a href="#a;">7</a>
+                    <a href="#a;">8</a>
+                    <a href="#a;">9</a>
+                    <a href="#a;" class="next">다음 페이지</a>
+                    <a href="#a;" class="last">마지막 페이지</a>
+                </div>
+            </div>
+            <div class="wrap">
+                <!-- 탭 -->
+                <div class="tab">
+                    <ul>
+                        <li class="on"><a href="#a;"><span class="name">프로그램 정보<br>프로그램 정보</span></a></li>
+                        <li><a href="#a;"><span class="name">수강자 정보</span></a></li>
+                        <li><a href="#a;"><span class="name">수강자 정보수강자 정보수강자 정보수강자 정보</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="divTable row">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableHead width20">콘텐츠 유형</div>
+                            <div class="divTableCell width80">
+                                <div class="width30">
+                                    <select name="selc1" id="selc1">
+                                        <option value="selc1">콘텐츠</option>
+                                    </select>
+                                </div>
+                                <div class="templeteWrap conts" style="display: block;">
+                                    <!-- 클래스명 conts: 일반 콘텐츠 / boards: 일반 게시판 / gallery: 갤러리 / etc: 기능성 등-->
+                                    <ul>
+                                        <li>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="contsRadio" id="contsRadio1" checked="">
+                                                <label for="contsRadio1">콘텐츠 유형 1</label>
+                                            </div>
+                                            <div class="styleWrap"></div>
+                                        </li>
+                                        <li>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="contsRadio" id="contsRadio2">
+                                                <label for="contsRadio2">콘텐츠 유형 2</label>
+                                            </div>
+                                            <div class="styleWrap"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="templeteWrap boards" style="display: block;">
+                                    <ul>
+                                        <li>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="boardsRadio" id="boardsRadio1" checked="">
+                                                <label for="boardsRadio1">콘텐츠 유형 1</label>
+                                            </div>
+                                            <div class="styleWrap"></div>
+                                        </li>
+                                        <li>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="boardsRadio" id="boardsRadio2">
+                                                <label for="boardsRadio2">콘텐츠 유형 2</label>
+                                            </div>
+                                            <div class="styleWrap"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="templeteWrap gallerys" style="display: block;">
+                                    <ul>
+                                        <li>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="gallerysRadio" id="gallerysRadio1" checked="">
+                                                <label for="gallerysRadio1">콘텐츠 유형 1</label>
+                                            </div>
+                                            <div class="styleWrap"></div>
+                                        </li>
+                                        <li>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="gallerysRadio" id="gallerysRadio2">
+                                                <label for="gallerysRadio2">콘텐츠 유형 2</label>
+                                            </div>
+                                            <div class="styleWrap"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="templeteWrap etcs" style="display: block;">
+                                    <ul>
+                                        <li>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="etcsRadio" id="etcsRadio1" checked="">
+                                                <label for="etcsRadio1">콘텐츠 유형 1</label>
+                                            </div>
+                                            <div class="styleWrap"></div>
+                                        </li>
+                                        <li>
+                                            <div class="radioWrap">
+                                                <input type="radio" name="etcsRadio" id="etcsRadio2">
+                                                <label for="etcsRadio2">콘텐츠 유형 2</label>
+                                            </div>
+                                            <div class="styleWrap"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //컨텐츠 영역 -->
+        </div>
+    </div>
+    <footer>
+        <div class="footerWrap">Copyright ©2021 IDASYSTEM. ALL RIGHT RESERVED.</div>
+    </footer>
+</body>
+
+</html>

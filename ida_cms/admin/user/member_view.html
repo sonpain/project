@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/icomoon.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../asset/js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../asset/js/lazy/lazysizes.min.js"></script>
+    <script type="text/javascript" src="../asset/js/slick/slick.js"></script>
+    <script type="text/javascript" src="../asset/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../asset/js/dragscroll/dragscroll.js"></script>
+    <script type="text/javascript" src="../asset/js/sticky/jquery.sticky.js"></script>
+    <script type="text/javascript" src="../asset/js/tweenmax/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../asset/js/tweenmax/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="../asset/js/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="../asset/js/selectric/jquery.selectric.min.js"></script>
+    <script type="text/javascript" src="../asset/js/ui.js"></script>
+    <title>idasystem</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerWrap">
+            <div class="statusWrap">
+                <h1 class="logo"><a href="#a;"><img src="../asset/images/common/logo.png"></a></h1>
+                <div class="subject">회원정보</div>
+                <ul>
+                    <li class="logout">
+                        <a href="#a;">로그아웃</a>
+                    </li>
+                    <li class="manager">
+                        <i class="profile" style="background: url(../asset/images/common/img_manager.png) no-repeat 50% 50%;"></i>
+                        <span class="name">조인성</span>
+                    </li>
+                    <li class="time">
+                        <i class="ico"></i>
+                        <span class="now">2021.03.08 12:40:13</span>
+                    </li>
+                    <li class="ip">
+                        <span class="title">IP</span>
+                        <span class="address">211.118.108.207</span>
+                    </li>
+                    <li class="switchWrap">
+                        <label class="switch">
+                            <input type="checkbox" checked="">
+                            <span class="switchSlider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="menuWrap">
+                <div class="menuBtn">
+                    <a href="#a;" class="menu"></a>
+                </div>
+                <div class="snb">
+                    <!-- <a href="#a;" class="depth1"><span class="ico icon1">서비스 관리(1뎁스)</span></a> -->
+                    <a href="#a;" class="depth1">
+                        <div class="iconArea icon"><i class="dash menu01"></i></div>
+                        <span class="font">회원관리</span>
+                    </a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#a;" class="on">회원정보</a>
+                            </li>
+                            <li>
+                                <a href="#a;">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="#a;">회원등록블가능ID</a>
+                            </li>
+                            <li>
+                                <a href="#a;">휴면회원</a>
+                            </li>
+                            <li>
+                                <a href="#a;">탈퇴회원</a>
+                            </li>
+                            <li>
+                                <a href="#a;">그룹관리</a>
+                            </li>
+                            <li>
+                                <a href="#a;">기본등급관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="naviWrap">
+                <div class="scrollWrap">
+                    <ul class="naviDep1">
+                        <li>
+                            <a href="#a;">기본 설정</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">기관(기업)기본정보</a></li>
+                                <li><a href="#a;">접속IP관리</a></li>
+                                <li><a href="#a;">이용약관</a></li>
+                                <li><a href="#a;">개인정보취급방침</a></li>
+                                <li><a href="#a;">이메일무단수집거부</a></li>
+                                <li><a href="#a;">기본SMS설정</a></li>
+                                <li><a href="#a;">공통코드관리</a></li>
+                                <li><a href="#a;">메시지관리</a></li>
+                                <li><a href="#a;">메뉴관리</a></li>
+                                <li><a href="#a;">콘텐츠관리</a></li>
+                                <li><a href="#a;">콘텐츠폴더관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;" class="on">회원 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">회원리스트</a></li>
+                                <li><a href="#a;">회원가입</a></li>
+                                <li><a href="#a;">회원등록불가능ID</a></li>
+                                <li><a href="#a;">휴면회원</a></li>
+                                <li><a href="#a;">탈퇴회원</a></li>
+                                <li><a href="#a;">그룹관리</a></li>
+                                <li><a href="#a;">기본등급관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">권한 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">운영자등록</a></li>
+                                <li><a href="#a;">운영자역할등록</a></li>
+                                <li><a href="#a;">개인정보VIEW</a></li>
+                                <li><a href="#a;">엑셀다운로드(일반)</a></li>
+                                <li><a href="#a;">엑셀다운로드(개인정보)</a></li>
+                                <li><a href="#a;">사이트관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">서비스 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">사용자홈페이지관리</a></li>
+                                <li><a href="#a;">전체게시판</a></li>
+                                <li><a href="#a;">공지사항</a></li>
+                                <li><a href="#a;">갤러리게시판</a></li>
+                                <li><a href="#a;">영상게시판</a></li>
+                                <li><a href="#a;">FAQ</a></li>
+                                <li><a href="#a;">1:1문의</a></li>
+                                <li><a href="#a;">배너관리</a></li>
+                                <li><a href="#a;">팝업관리</a></li>
+                                <li><a href="#a;">일정관리</a></li>
+                                <li><a href="#a;">관련사이트링크</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">강좌/강의 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">강좌관리</a></li>
+                                <li><a href="#a;">강의(프로그램)관리</a></li>
+                                <li><a href="#a;">수강신청관리</a></li>
+                                <li><a href="#a;">이수자관리</a></li>
+                                <li><a href="#a;">개설강좌인원통계</a></li>
+                                <li><a href="#a;">수료증발급관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">통계</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">사용자로그인이력</a></li>
+                                <li><a href="#a;">사용자페이지접근이력</a></li>
+                                <li><a href="#a;">OS별통계</a></li>
+                                <li><a href="#a;">지역별통계</a></li>
+                                <li><a href="#a;">운영체제통계</a></li>
+                                <li><a href="#a;">브라우저통계</a></li>
+                                <li><a href="#a;">접속통계</a></li>
+                                <li><a href="#a;">방문자접속경로</a></li>
+                                <li><a href="#a;">로그인통계</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">UMS 설정</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">문자</a></li>
+                                <li><a href="#a;">메일</a></li>
+                                <li><a href="#a;">카카오알림</a></li>
+                                <li><a href="#a;">PUSH</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body contentsWrap">
+        <div class="contents scrollWrap">
+            <div class="wrap">
+                <p class="subTitle">회원정보</p>
+                <div class="divTable row">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">성명</div>
+                            <div class="divTableCell width85">
+                                박혜란
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">생년월일</div>
+                            <div class="divTableCell width85">
+                                1991.08.03
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">성별</div>
+                            <div class="divTableCell width85">
+                                여자
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">아이디</div>
+                            <div class="divTableCell width85">
+                                test0526
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">비밀번호</div>
+                            <div class="divTableCell width85">
+                                <div class="inBlock marginR5">
+                                    <a href="#a;" class="btn small do">비밀번호재설정</a>
+                                </div>
+                                <div class="helpTxt">'비밀번호재설정' 하시면 회원의 아이디로 변경됨</div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">주소</div>
+                            <div class="divTableCell width85">
+                                [08512] 서울 금천구 디지털로9길 32 (가산동, 갑을그레이트밸리) b동 408호
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">휴대폰 번호</div>
+                            <div class="divTableCell width85">
+                                010-000-0000
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">전화번호</div>
+                            <div class="divTableCell width85">
+                                070-4077-4738
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">e-mail</div>
+                            <div class="divTableCell width85">
+                                phr@idasystem.co.kr
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">최종학력</div>
+                            <div class="divTableCell width85">
+                                대학교 졸업
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">가입경로</div>
+                            <div class="divTableCell width85">
+                                블로그, 카페
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">정보수신여부</div>
+                            <div class="divTableCell width85">
+                                <div>
+                                    <div class="chkWrap">
+                                        <input type="checkbox" id="fCk1" name="mem_email_yn" value="Y" disabled="disabled">
+                                        <label for="fCk1">뉴스레터 이메일 수신</label>
+                                    </div>
+                                    <div class="chkWrap">
+                                        <input type="checkbox" id="fCk2" name="mem_sms_yn" value="Y" disabled="disabled">
+                                        <label for="fCk2">홈페이지 회원 SMS 정보수신</label>
+                                    </div>
+                                </div>
+                                <div class="helpTxt marginT5">※ 교육안내 정보, 수강신청상황, 휴면회원 예정안내, 주요 정책관련 공지는 수신거부와 상관없이 이메일과 문자가로 발송됩니다</div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">회원가입일자</div>
+                            <div class="divTableCell width85">
+                                2020.05.26
+                            </div>
+                        </div>
+                        <!-- 일반회원의 경우 -->
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">휴면 예정일자</div>
+                            <div class="divTableCell width85">
+                                2020.05.26
+                            </div>
+                        </div>
+                        <!-- //일반회원의 경우 -->
+                        <!-- 휴면회원의 경우 -->
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">휴면 전환일자</div>
+                            <div class="divTableCell width85">
+                                2020.05.26
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">탈퇴 예정일자</div>
+                            <div class="divTableCell width85">
+                                2020.05.26
+                            </div>
+                        </div>
+                        <!-- //휴면회원의 경우 -->
+                        <!-- 탈퇴회원의 경우 -->
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">탈퇴 예정일자</div>
+                            <div class="divTableCell width85">
+                                2020.05.26
+                            </div>
+                        </div>
+                        <!-- //탈퇴회원의 경우 -->
+                    </div>
+                </div>
+                <div class="btnWrap right marginT40">
+                    <a href="#a;" class="btn large list">목록</a>
+                    <a href="#a;" class="btn large do">수정</a>
+                    <a href="#a;" class="btn large do">탈퇴처리</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerWrap">Copyright ©2021 IDASYSTEM. ALL RIGHT RESERVED.</div>
+    </footer>
+</body>
+
+</html>

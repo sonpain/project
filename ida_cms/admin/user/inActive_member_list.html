@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/icomoon.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../asset/js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../asset/js/lazy/lazysizes.min.js"></script>
+    <script type="text/javascript" src="../asset/js/slick/slick.js"></script>
+    <script type="text/javascript" src="../asset/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../asset/js/dragscroll/dragscroll.js"></script>
+    <script type="text/javascript" src="../asset/js/sticky/jquery.sticky.js"></script>
+    <script type="text/javascript" src="../asset/js/tweenmax/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../asset/js/tweenmax/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="../asset/js/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="../asset/js/selectric/jquery.selectric.min.js"></script>
+    <script type="text/javascript" src="../asset/js/ui.js"></script>
+    <title>idasystem</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerWrap">
+            <div class="statusWrap">
+                <h1 class="logo"><a href="#a;"><img src="../asset/images/common/logo.png"></a></h1>
+                <div class="subject">회원정보</div>
+                <ul>
+                    <li class="logout">
+                        <a href="#a;">로그아웃</a>
+                    </li>
+                    <li class="manager">
+                        <i class="profile" style="background: url(../asset/images/common/img_manager.png) no-repeat 50% 50%;"></i>
+                        <span class="name">조인성</span>
+                    </li>
+                    <li class="time">
+                        <i class="ico"></i>
+                        <span class="now">2021.03.08 12:40:13</span>
+                    </li>
+                    <li class="ip">
+                        <span class="title">IP</span>
+                        <span class="address">211.118.108.207</span>
+                    </li>
+                    <li class="switchWrap">
+                        <label class="switch">
+                            <input type="checkbox" checked="">
+                            <span class="switchSlider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="menuWrap">
+                <div class="menuBtn">
+                    <a href="#a;" class="menu"></a>
+                </div>
+                <div class="snb">
+                    <!-- <a href="#a;" class="depth1"><span class="ico icon1">서비스 관리(1뎁스)</span></a> -->
+                    <a href="#a;" class="depth1">
+                        <div class="iconArea icon"><i class="dash menu01"></i></div>
+                        <span class="font">회원관리</span>
+                    </a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#a;">회원정보</a>
+                            </li>
+                            <li>
+                                <a href="#a;">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="#a;">회원등록블가능ID</a>
+                            </li>
+                            <li>
+                                <a href="#a;"  class="on">휴면회원</a>
+                            </li>
+                            <li>
+                                <a href="#a;">탈퇴회원</a>
+                            </li>
+                            <li>
+                                <a href="#a;">그룹관리</a>
+                            </li>
+                            <li>
+                                <a href="#a;">기본등급관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="naviWrap">
+                <div class="scrollWrap">
+                    <ul class="naviDep1">
+                        <li>
+                            <a href="#a;">기본 설정</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">기관(기업)기본정보</a></li>
+                                <li><a href="#a;">접속IP관리</a></li>
+                                <li><a href="#a;">이용약관</a></li>
+                                <li><a href="#a;">개인정보취급방침</a></li>
+                                <li><a href="#a;">이메일무단수집거부</a></li>
+                                <li><a href="#a;">기본SMS설정</a></li>
+                                <li><a href="#a;">공통코드관리</a></li>
+                                <li><a href="#a;">메시지관리</a></li>
+                                <li><a href="#a;">메뉴관리</a></li>
+                                <li><a href="#a;">콘텐츠관리</a></li>
+                                <li><a href="#a;">콘텐츠폴더관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;" class="on">회원 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">회원리스트</a></li>
+                                <li><a href="#a;">회원가입</a></li>
+                                <li><a href="#a;">회원등록불가능ID</a></li>
+                                <li><a href="#a;">휴면회원</a></li>
+                                <li><a href="#a;">탈퇴회원</a></li>
+                                <li><a href="#a;">그룹관리</a></li>
+                                <li><a href="#a;">기본등급관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">권한 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">운영자등록</a></li>
+                                <li><a href="#a;">운영자역할등록</a></li>
+                                <li><a href="#a;">개인정보VIEW</a></li>
+                                <li><a href="#a;">엑셀다운로드(일반)</a></li>
+                                <li><a href="#a;">엑셀다운로드(개인정보)</a></li>
+                                <li><a href="#a;">사이트관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">서비스 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">사용자홈페이지관리</a></li>
+                                <li><a href="#a;">전체게시판</a></li>
+                                <li><a href="#a;">공지사항</a></li>
+                                <li><a href="#a;">갤러리게시판</a></li>
+                                <li><a href="#a;">영상게시판</a></li>
+                                <li><a href="#a;">FAQ</a></li>
+                                <li><a href="#a;">1:1문의</a></li>
+                                <li><a href="#a;">배너관리</a></li>
+                                <li><a href="#a;">팝업관리</a></li>
+                                <li><a href="#a;">일정관리</a></li>
+                                <li><a href="#a;">관련사이트링크</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">강좌/강의 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">강좌관리</a></li>
+                                <li><a href="#a;">강의(프로그램)관리</a></li>
+                                <li><a href="#a;">수강신청관리</a></li>
+                                <li><a href="#a;">이수자관리</a></li>
+                                <li><a href="#a;">개설강좌인원통계</a></li>
+                                <li><a href="#a;">수료증발급관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">통계</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">사용자로그인이력</a></li>
+                                <li><a href="#a;">사용자페이지접근이력</a></li>
+                                <li><a href="#a;">OS별통계</a></li>
+                                <li><a href="#a;">지역별통계</a></li>
+                                <li><a href="#a;">운영체제통계</a></li>
+                                <li><a href="#a;">브라우저통계</a></li>
+                                <li><a href="#a;">접속통계</a></li>
+                                <li><a href="#a;">방문자접속경로</a></li>
+                                <li><a href="#a;">로그인통계</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">UMS 설정</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">문자</a></li>
+                                <li><a href="#a;">메일</a></li>
+                                <li><a href="#a;">카카오알림</a></li>
+                                <li><a href="#a;">PUSH</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body contentsWrap">
+        <div class="contents scrollWrap">
+            <div class="wrap">
+                <p class="subTitle">휴면회원정보</p>
+                <div class="searchWrap">
+                    <div class="searchInWrap">
+                        <div class="boxWrap paddingR20">
+                            <div class="box width20">
+                                <div class="title">회원 아이디</div>
+                                <div class="inBlock width100">
+                                    <label for="memIdSel" class="invisible"></label>
+                                    <input type="text" id="memIdSel" name="memIdSel" value="">
+                                </div>
+                            </div>
+                            <div class="box width30">
+                                <div class="title">최종학력</div>
+                                <div class="inBlock width60 paddingR5">
+                                    <label for="finalEduSel" class="invisible"></label>
+                                    <select title="최종학력 선택" name="finalEduSel" id="finalEduSel">
+                                        <option value="" selected="selected">전체</option>
+                                        <option value="001">대학원</option>
+                                        <option value="002">대학교</option>
+                                        <option value="006">전문대학</option>
+                                        <option value="003">고등학교</option>
+                                        <option value="004">중학교</option>
+                                        <option value="005">초등학교</option>
+                                    </select>
+                                </div>
+                                <div class="inBlock width40">
+                                    <label for="finalEduStatusSel" class="invisible"></label>
+                                    <select title="최종학력 선택" name="finalEduStatusSel" id="finalEduStatusSel">
+                                        <option value="" selected="selected">전체</option>
+                                        <option value="001">졸업</option>
+                                        <option value="002">중퇴</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box width20">
+                                <div class="title">지역</div>
+                                <div class="inBlock width100">
+                                    <label for="memAddrOneSel" class="invisible"></label>
+                                    <select id="memAddrOneSel" name="memAddrOneSel">
+                                        <option value="">전체검색</option>
+                                        <option value="서울">서울</option>
+                                        <option value="부산">부산</option>
+                                        <option value="대구">대구</option>
+                                        <option value="인천">인천</option>
+                                        <option value="광주">광주</option>
+                                        <option value="대전">대전</option>
+                                        <option value="울산">울산</option>
+                                        <option value="세종">세종</option>
+                                        <option value="경기">경기</option>
+                                        <option value="강원">강원</option>
+                                        <option value="충북">충북</option>
+                                        <option value="충남">충남</option>
+                                        <option value="전북">전북</option>
+                                        <option value="전남">전남</option>
+                                        <option value="경북">경북</option>
+                                        <option value="경남">경남</option>
+                                        <option value="제주">제주</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box width30">
+                                <div class="title">탈퇴 예정자 조건</div>
+                                <div class="inBlock width100">
+                                    <div class="radioWrap">
+                                        <input type="radio" name="selcMonth" id="month1">
+                                        <label for="month1">1개월내</label>
+                                    </div>
+                                    <div class="radioWrap">
+                                        <input type="radio" name="selcMonth" id="month2">
+                                        <label for="month2">3개월내</label>
+                                    </div>
+                                    <div class="radioWrap">
+                                        <input type="radio" name="selcMonth" id="month3">
+                                        <label for="month3">6개월내</label>
+                                    </div>
+                                    <div class="radioWrap">
+                                        <input type="radio" name="selcMonth" id="month4">
+                                        <label for="month4">12개월내</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxWrap paddingR20 marginT5">
+                            <div class="box width20">
+                                <div class="title">회원명</div>
+                                <div class="inBlock width100">
+                                    <label for="memIdSel" class="invisible"></label>
+                                    <input type="text" id="memNameSel" name="memNameSel" value="">
+                                </div>
+                            </div>
+                            <div class="box width30">
+                                <div class="title">가입경로</div>
+                                <div class="inBlock width100">
+                                    <label for="joinPathSel" class="invisible"></label>
+                                    <select id="joinPathSel" name="joinPathSel">
+                                        <option value="">전체검색</option>
+                                        <option value="001">블로그, 카페</option>
+                                        <option value="002">홍보지(리플렛)</option>
+                                        <option value="003">지역정보지</option>
+                                        <option value="004">지하철광고</option>
+                                        <option value="005">버스광고</option>
+                                        <option value="007">현수막</option>
+                                        <option value="006">기타</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box width20">
+                                <div class="title">이메일 수신</div>
+                                <div class="inBlock width100">
+                                    <label for="memEmailYnSel" class="invisible"></label>
+                                    <select id="memEmailYnSel" name="memEmailYnSel">
+                                        <option value="">전체검색</option>
+                                        <option value="Y">Y</option>
+                                        <option value="N">N</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="box width30">
+                                <div class="title">SMS 수신</div>
+                                <div class="inBlock width100">
+                                    <label for="memSmsYnSel" class="invisible"></label>
+                                    <select id="memSmsYnSel" name="memSmsYnSel">
+                                        <option value="">전체검색</option>
+                                        <option value="Y">Y</option>
+                                        <option value="N">N</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#a;" class="btn search">검색</a>
+                    </div>
+                </div>
+                <div class="divTable col">
+                    <div class="divTableHeading">
+                        <div class="divTableRow">
+                            <div class="divTableHead width5">번호</div>
+                            <div class="divTableHead width8">회원 아이디</div>
+                            <div class="divTableHead width8">회원명</div>
+                            <div class="divTableHead width5">성별</div>
+                            <div class="divTableHead width5">지역</div>
+                            <div class="divTableHead width10">최종학력</div>
+                            <div class="divTableHead width10">가입경로</div>
+                            <div class="divTableHead width5">이메일 수신</div>
+                            <div class="divTableHead width5">SMS 수신</div>
+                            <div class="divTableHead width8">인증구분</div>
+                            <div class="divTableHead width8">가입일자</div>
+                            <div class="divTableHead width8">휴면전환일자</div>
+                            <div class="divTableHead width8">탈퇴예정일자</div>
+                        </div>
+                    </div>
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">9</div>
+                            <div class="divTableCell"><a href="#a;">sho9600469</a></div>
+                            <div class="divTableCell">귀염둥이</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">전문대학 졸업</div>
+                            <div class="divTableCell">홍보지(리플렛)</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">8</div>
+                            <div class="divTableCell"><a href="#a;">sho9600469</a></div>
+                            <div class="divTableCell">귀염둥이</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">전문대학 졸업</div>
+                            <div class="divTableCell">홍보지(리플렛)</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">7</div>
+                            <div class="divTableCell"><a href="#a;">sho9600469</a></div>
+                            <div class="divTableCell">귀염둥이</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">전문대학 졸업</div>
+                            <div class="divTableCell">홍보지(리플렛)</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">6</div>
+                            <div class="divTableCell"><a href="#a;">sho9600469</a></div>
+                            <div class="divTableCell">귀염둥이</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">전문대학 졸업</div>
+                            <div class="divTableCell">홍보지(리플렛)</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">5</div>
+                            <div class="divTableCell"><a href="#a;">sho9600469</a></div>
+                            <div class="divTableCell">귀염둥이</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">전문대학 졸업</div>
+                            <div class="divTableCell">홍보지(리플렛)</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">4</div>
+                            <div class="divTableCell"><a href="#a;">sho9600469</a></div>
+                            <div class="divTableCell">귀염둥이</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">전문대학 졸업</div>
+                            <div class="divTableCell">홍보지(리플렛)</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">3</div>
+                            <div class="divTableCell"><a href="#a;">sho9600469</a></div>
+                            <div class="divTableCell">귀염둥이</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">전문대학 졸업</div>
+                            <div class="divTableCell">홍보지(리플렛)</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">2</div>
+                            <div class="divTableCell"><a href="#a;">sho9600469</a></div>
+                            <div class="divTableCell">귀염둥이</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">전문대학 졸업</div>
+                            <div class="divTableCell">홍보지(리플렛)</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">1</div>
+                            <div class="divTableCell"><a href="#a;">test0526</a></div>
+                            <div class="divTableCell">박혜란</div>
+                            <div class="divTableCell">여</div>
+                            <div class="divTableCell">서울</div>
+                            <div class="divTableCell">대학교 졸업</div>
+                            <div class="divTableCell">블로그, 카페</div>
+                            <div class="divTableCell"><span class="useY">Y</div>
+                            <div class="divTableCell"><span class="useN">N</div>
+                            <div class="divTableCell">이메일 인증</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                            <div class="divTableCell">2020.05.26</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="paging marginT40">
+                    <a href="#a;" class="first">첫 페이지</a>
+                    <a href="#a;" class="prev">이전 페이지</a>
+                    <a href="#a;"><strong>1</strong></a>
+                    <a href="#a;">2</a>
+                    <a href="#a;">3</a>
+                    <a href="#a;">4</a>
+                    <a href="#a;">5</a>
+                    <a href="#a;">6</a>
+                    <a href="#a;">7</a>
+                    <a href="#a;">8</a>
+                    <a href="#a;">9</a>
+                    <a href="#a;" class="next">다음 페이지</a>
+                    <a href="#a;" class="last">마지막 페이지</a>
+                </div>
+                <div class="btnWrap right marginT20">
+                    <a href="#a;" class="btn large do">등록</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerWrap">Copyright ©2021 IDASYSTEM. ALL RIGHT RESERVED.</div>
+    </footer>
+</body>
+
+</html>

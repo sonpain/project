@@ -1,0 +1,2385 @@
+@font-face {
+    font-family: 'IcoMoon';
+    src: url('../fonts/icomoon/icomoon.eot');
+    src: url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/icomoon/icomoon.woff') format('woff'),
+         url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+         url('../fonts/icomoon/icomoon.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'IcoMoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #fff;
+
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    vertical-align: middle;
+    content: "\e900";
+}
+.icon-home2:before {
+    vertical-align: middle;
+    content: "\e901";
+}
+.icon-home3:before {
+    vertical-align: middle;
+    content: "\e902";
+}
+.icon-office:before {
+    vertical-align: middle;
+    content: "\e903";
+}
+.icon-newspaper:before {
+    vertical-align: middle;
+    content: "\e904";
+}
+.icon-pencil:before {
+    vertical-align: middle;
+    content: "\e905";
+}
+.icon-pencil2:before {
+    vertical-align: middle;
+    content: "\e906";
+}
+.icon-quill:before {
+    vertical-align: middle;
+    content: "\e907";
+}
+.icon-pen:before {
+    vertical-align: middle;
+    content: "\e908";
+}
+.icon-blog:before {
+    vertical-align: middle;
+    content: "\e909";
+}
+.icon-eyedropper:before {
+    vertical-align: middle;
+    content: "\e90a";
+}
+.icon-droplet:before {
+    vertical-align: middle;
+    content: "\e90b";
+}
+.icon-paint-format:before {
+    vertical-align: middle;
+    content: "\e90c";
+}
+.icon-image:before {
+    vertical-align: middle;
+    content: "\e90d";
+}
+.icon-images:before {
+    vertical-align: middle;
+    content: "\e90e";
+}
+.icon-camera:before {
+    vertical-align: middle;
+    content: "\e90f";
+}
+.icon-headphones:before {
+    vertical-align: middle;
+    content: "\e910";
+}
+.icon-music:before {
+    vertical-align: middle;
+    content: "\e911";
+}
+.icon-play:before {
+    vertical-align: middle;
+    content: "\e912";
+}
+.icon-film:before {
+    vertical-align: middle;
+    content: "\e913";
+}
+.icon-video-camera:before {
+    vertical-align: middle;
+    content: "\e914";
+}
+.icon-dice:before {
+    vertical-align: middle;
+    content: "\e915";
+}
+.icon-pacman:before {
+    vertical-align: middle;
+    content: "\e916";
+}
+.icon-spades:before {
+    vertical-align: middle;
+    content: "\e917";
+}
+.icon-clubs:before {
+    vertical-align: middle;
+    content: "\e918";
+}
+.icon-diamonds:before {
+    vertical-align: middle;
+    content: "\e919";
+}
+.icon-bullhorn:before {
+    vertical-align: middle;
+    content: "\e91a";
+}
+.icon-connection:before {
+    vertical-align: middle;
+    content: "\e91b";
+}
+.icon-podcast:before {
+    vertical-align: middle;
+    content: "\e91c";
+}
+.icon-feed:before {
+    vertical-align: middle;
+    content: "\e91d";
+}
+.icon-mic:before {
+    vertical-align: middle;
+    content: "\e91e";
+}
+.icon-book:before {
+    vertical-align: middle;
+    content: "\e91f";
+}
+.icon-books:before {
+    vertical-align: middle;
+    content: "\e920";
+}
+.icon-library:before {
+    vertical-align: middle;
+    content: "\e921";
+}
+.icon-file-text:before {
+    vertical-align: middle;
+    content: "\e922";
+}
+.icon-profile:before {
+    vertical-align: middle;
+    content: "\e923";
+}
+.icon-file-empty:before {
+    vertical-align: middle;
+    content: "\e924";
+}
+.icon-files-empty:before {
+    vertical-align: middle;
+    content: "\e925";
+}
+.icon-file-text2:before {
+    vertical-align: middle;
+    content: "\e926";
+}
+.icon-file-picture:before {
+    vertical-align: middle;
+    content: "\e927";
+}
+.icon-file-music:before {
+    vertical-align: middle;
+    content: "\e928";
+}
+.icon-file-play:before {
+    vertical-align: middle;
+    content: "\e929";
+}
+.icon-file-video:before {
+    vertical-align: middle;
+    content: "\e92a";
+}
+.icon-file-zip:before {
+    vertical-align: middle;
+    content: "\e92b";
+}
+.icon-copy:before {
+    vertical-align: middle;
+    content: "\e92c";
+}
+.icon-paste:before {
+    vertical-align: middle;
+    content: "\e92d";
+}
+.icon-stack:before {
+    vertical-align: middle;
+    content: "\e92e";
+}
+.icon-folder:before {
+    vertical-align: middle;
+    content: "\e92f";
+}
+.icon-folder-open:before {
+    vertical-align: middle;
+    content: "\e930";
+}
+.icon-folder-plus:before {
+    vertical-align: middle;
+    content: "\e931";
+}
+.icon-folder-minus:before {
+    vertical-align: middle;
+    content: "\e932";
+}
+.icon-folder-download:before {
+    vertical-align: middle;
+    content: "\e933";
+}
+.icon-folder-upload:before {
+    vertical-align: middle;
+    content: "\e934";
+}
+.icon-price-tag:before {
+    vertical-align: middle;
+    content: "\e935";
+}
+.icon-price-tags:before {
+    vertical-align: middle;
+    content: "\e936";
+}
+.icon-barcode:before {
+    vertical-align: middle;
+    content: "\e937";
+}
+.icon-qrcode:before {
+    vertical-align: middle;
+    content: "\e938";
+}
+.icon-ticket:before {
+    vertical-align: middle;
+    content: "\e939";
+}
+.icon-cart:before {
+    vertical-align: middle;
+    content: "\e93a";
+}
+.icon-coin-dollar:before {
+    vertical-align: middle;
+    content: "\e93b";
+}
+.icon-coin-euro:before {
+    vertical-align: middle;
+    content: "\e93c";
+}
+.icon-coin-pound:before {
+    vertical-align: middle;
+    content: "\e93d";
+}
+.icon-coin-yen:before {
+    vertical-align: middle;
+    content: "\e93e";
+}
+.icon-credit-card:before {
+    vertical-align: middle;
+    content: "\e93f";
+}
+.icon-calculator:before {
+    vertical-align: middle;
+    content: "\e940";
+}
+.icon-lifebuoy:before {
+    vertical-align: middle;
+    content: "\e941";
+}
+.icon-phone:before {
+    vertical-align: middle;
+    content: "\e942";
+}
+.icon-phone-hang-up:before {
+    vertical-align: middle;
+    content: "\e943";
+}
+.icon-address-book:before {
+    vertical-align: middle;
+    content: "\e944";
+}
+.icon-envelop:before {
+    vertical-align: middle;
+    content: "\e945";
+}
+.icon-pushpin:before {
+    vertical-align: middle;
+    content: "\e946";
+}
+.icon-location:before {
+    vertical-align: middle;
+    content: "\e947";
+}
+.icon-location2:before {
+    vertical-align: middle;
+    content: "\e948";
+}
+.icon-compass:before {
+    vertical-align: middle;
+    content: "\e949";
+}
+.icon-compass2:before {
+    vertical-align: middle;
+    content: "\e94a";
+}
+.icon-map:before {
+    vertical-align: middle;
+    content: "\e94b";
+}
+.icon-map2:before {
+    vertical-align: middle;
+    content: "\e94c";
+}
+.icon-history:before {
+    vertical-align: middle;
+    content: "\e94d";
+}
+.icon-clock:before {
+    vertical-align: middle;
+    content: "\e94e";
+}
+.icon-clock2:before {
+    vertical-align: middle;
+    content: "\e94f";
+}
+.icon-alarm:before {
+    vertical-align: middle;
+    content: "\e950";
+}
+.icon-bell:before {
+    vertical-align: middle;
+    content: "\e951";
+}
+.icon-stopwatch:before {
+    vertical-align: middle;
+    content: "\e952";
+}
+.icon-calendar:before {
+    vertical-align: middle;
+    content: "\e953";
+}
+.icon-printer:before {
+    vertical-align: middle;
+    content: "\e954";
+}
+.icon-keyboard:before {
+    vertical-align: middle;
+    content: "\e955";
+}
+.icon-display:before {
+    vertical-align: middle;
+    content: "\e956";
+}
+.icon-laptop:before {
+    vertical-align: middle;
+    content: "\e957";
+}
+.icon-mobile:before {
+    vertical-align: middle;
+    content: "\e958";
+}
+.icon-mobile2:before {
+    vertical-align: middle;
+    content: "\e959";
+}
+.icon-tablet:before {
+    vertical-align: middle;
+    content: "\e95a";
+}
+.icon-tv:before {
+    vertical-align: middle;
+    content: "\e95b";
+}
+.icon-drawer:before {
+    vertical-align: middle;
+    content: "\e95c";
+}
+.icon-drawer2:before {
+    vertical-align: middle;
+    content: "\e95d";
+}
+.icon-box-add:before {
+    vertical-align: middle;
+    content: "\e95e";
+}
+.icon-box-remove:before {
+    vertical-align: middle;
+    content: "\e95f";
+}
+.icon-download:before {
+    vertical-align: middle;
+    content: "\e960";
+}
+.icon-upload:before {
+    vertical-align: middle;
+    content: "\e961";
+}
+.icon-floppy-disk:before {
+    vertical-align: middle;
+    content: "\e962";
+}
+.icon-drive:before {
+    vertical-align: middle;
+    content: "\e963";
+}
+.icon-database:before {
+    vertical-align: middle;
+    content: "\e964";
+}
+.icon-undo:before {
+    vertical-align: middle;
+    content: "\e965";
+}
+.icon-redo:before {
+    vertical-align: middle;
+    content: "\e966";
+}
+.icon-undo2:before {
+    vertical-align: middle;
+    content: "\e967";
+}
+.icon-redo2:before {
+    vertical-align: middle;
+    content: "\e968";
+}
+.icon-forward:before {
+    vertical-align: middle;
+    content: "\e969";
+}
+.icon-reply:before {
+    vertical-align: middle;
+    content: "\e96a";
+}
+.icon-bubble:before {
+    vertical-align: middle;
+    content: "\e96b";
+}
+.icon-bubbles:before {
+    vertical-align: middle;
+    content: "\e96c";
+}
+.icon-bubbles2:before {
+    vertical-align: middle;
+    content: "\e96d";
+}
+.icon-bubble2:before {
+    vertical-align: middle;
+    content: "\e96e";
+}
+.icon-bubbles3:before {
+    vertical-align: middle;
+    content: "\e96f";
+}
+.icon-bubbles4:before {
+    vertical-align: middle;
+    content: "\e970";
+}
+.icon-user:before {
+    vertical-align: middle;
+    content: "\e971";
+}
+.icon-users:before {
+    vertical-align: middle;
+    content: "\e972";
+}
+.icon-user-plus:before {
+    vertical-align: middle;
+    content: "\e973";
+}
+.icon-user-minus:before {
+    vertical-align: middle;
+    content: "\e974";
+}
+.icon-user-check:before {
+    vertical-align: middle;
+    content: "\e975";
+}
+.icon-user-tie:before {
+    vertical-align: middle;
+    content: "\e976";
+}
+.icon-quotes-left:before {
+    vertical-align: middle;
+    content: "\e977";
+}
+.icon-quotes-right:before {
+    vertical-align: middle;
+    content: "\e978";
+}
+.icon-hour-glass:before {
+    vertical-align: middle;
+    content: "\e979";
+}
+.icon-spinner:before {
+    vertical-align: middle;
+    content: "\e97a";
+}
+.icon-spinner2:before {
+    vertical-align: middle;
+    content: "\e97b";
+}
+.icon-spinner3:before {
+    vertical-align: middle;
+    content: "\e97c";
+}
+.icon-spinner4:before {
+    vertical-align: middle;
+    content: "\e97d";
+}
+.icon-spinner5:before {
+    vertical-align: middle;
+    content: "\e97e";
+}
+.icon-spinner6:before {
+    vertical-align: middle;
+    content: "\e97f";
+}
+.icon-spinner7:before {
+    vertical-align: middle;
+    content: "\e980";
+}
+.icon-spinner8:before {
+    vertical-align: middle;
+    content: "\e981";
+}
+.icon-spinner9:before {
+    vertical-align: middle;
+    content: "\e982";
+}
+.icon-spinner10:before {
+    vertical-align: middle;
+    content: "\e983";
+}
+.icon-spinner11:before {
+    vertical-align: middle;
+    content: "\e984";
+}
+.icon-binoculars:before {
+    vertical-align: middle;
+    content: "\e985";
+}
+.icon-search:before {
+    vertical-align: middle;
+    content: "\e986";
+}
+.icon-zoom-in:before {
+    vertical-align: middle;
+    content: "\e987";
+}
+.icon-zoom-out:before {
+    vertical-align: middle;
+    content: "\e988";
+}
+.icon-enlarge:before {
+    vertical-align: middle;
+    content: "\e989";
+}
+.icon-shrink:before {
+    vertical-align: middle;
+    content: "\e98a";
+}
+.icon-enlarge2:before {
+    vertical-align: middle;
+    content: "\e98b";
+}
+.icon-shrink2:before {
+    vertical-align: middle;
+    content: "\e98c";
+}
+.icon-key:before {
+    vertical-align: middle;
+    content: "\e98d";
+}
+.icon-key2:before {
+    vertical-align: middle;
+    content: "\e98e";
+}
+.icon-lock:before {
+    vertical-align: middle;
+    content: "\e98f";
+}
+.icon-unlocked:before {
+    vertical-align: middle;
+    content: "\e990";
+}
+.icon-wrench:before {
+    vertical-align: middle;
+    content: "\e991";
+}
+.icon-equalizer:before {
+    vertical-align: middle;
+    content: "\e992";
+}
+.icon-equalizer2:before {
+    vertical-align: middle;
+    content: "\e993";
+}
+.icon-cog:before {
+    vertical-align: middle;
+    content: "\e994";
+}
+.icon-cogs:before {
+    vertical-align: middle;
+    content: "\e995";
+}
+.icon-hammer:before {
+    vertical-align: middle;
+    content: "\e996";
+}
+.icon-magic-wand:before {
+    vertical-align: middle;
+    content: "\e997";
+}
+.icon-aid-kit:before {
+    vertical-align: middle;
+    content: "\e998";
+}
+.icon-bug:before {
+    vertical-align: middle;
+    content: "\e999";
+}
+.icon-pie-chart:before {
+    vertical-align: middle;
+    content: "\e99a";
+}
+.icon-stats-dots:before {
+    vertical-align: middle;
+    content: "\e99b";
+}
+.icon-stats-bars:before {
+    vertical-align: middle;
+    content: "\e99c";
+}
+.icon-stats-bars2:before {
+    vertical-align: middle;
+    content: "\e99d";
+}
+.icon-trophy:before {
+    vertical-align: middle;
+    content: "\e99e";
+}
+.icon-gift:before {
+    vertical-align: middle;
+    content: "\e99f";
+}
+.icon-glass:before {
+    vertical-align: middle;
+    content: "\e9a0";
+}
+.icon-glass2:before {
+    vertical-align: middle;
+    content: "\e9a1";
+}
+.icon-mug:before {
+    vertical-align: middle;
+    content: "\e9a2";
+}
+.icon-spoon-knife:before {
+    vertical-align: middle;
+    content: "\e9a3";
+}
+.icon-leaf:before {
+    vertical-align: middle;
+    content: "\e9a4";
+}
+.icon-rocket:before {
+    vertical-align: middle;
+    content: "\e9a5";
+}
+.icon-meter:before {
+    vertical-align: middle;
+    content: "\e9a6";
+}
+.icon-meter2:before {
+    vertical-align: middle;
+    content: "\e9a7";
+}
+.icon-hammer2:before {
+    vertical-align: middle;
+    content: "\e9a8";
+}
+.icon-fire:before {
+    vertical-align: middle;
+    content: "\e9a9";
+}
+.icon-lab:before {
+    vertical-align: middle;
+    content: "\e9aa";
+}
+.icon-magnet:before {
+    vertical-align: middle;
+    content: "\e9ab";
+}
+.icon-bin:before {
+    vertical-align: middle;
+    content: "\e9ac";
+}
+.icon-bin2:before {
+    vertical-align: middle;
+    content: "\e9ad";
+}
+.icon-briefcase:before {
+    vertical-align: middle;
+    content: "\e9ae";
+}
+.icon-airplane:before {
+    vertical-align: middle;
+    content: "\e9af";
+}
+.icon-truck:before {
+    vertical-align: middle;
+    content: "\e9b0";
+}
+.icon-road:before {
+    vertical-align: middle;
+    content: "\e9b1";
+}
+.icon-accessibility:before {
+    vertical-align: middle;
+    content: "\e9b2";
+}
+.icon-target:before {
+    vertical-align: middle;
+    content: "\e9b3";
+}
+.icon-shield:before {
+    vertical-align: middle;
+    content: "\e9b4";
+}
+.icon-power:before {
+    vertical-align: middle;
+    content: "\e9b5";
+}
+.icon-switch:before {
+    vertical-align: middle;
+    content: "\e9b6";
+}
+.icon-power-cord:before {
+    vertical-align: middle;
+    content: "\e9b7";
+}
+.icon-clipboard:before {
+    vertical-align: middle;
+    content: "\e9b8";
+}
+.icon-list-numbered:before {
+    vertical-align: middle;
+    content: "\e9b9";
+}
+.icon-list:before {
+    vertical-align: middle;
+    content: "\e9ba";
+}
+.icon-list2:before {
+    vertical-align: middle;
+    content: "\e9bb";
+}
+.icon-tree:before {
+    vertical-align: middle;
+    content: "\e9bc";
+}
+.icon-menu:before {
+    vertical-align: middle;
+    content: "\e9bd";
+}
+.icon-menu2:before {
+    vertical-align: middle;
+    content: "\e9be";
+}
+.icon-menu3:before {
+    vertical-align: middle;
+    content: "\e9bf";
+}
+.icon-menu4:before {
+    vertical-align: middle;
+    content: "\e9c0";
+}
+.icon-cloud:before {
+    vertical-align: middle;
+    content: "\e9c1";
+}
+.icon-cloud-download:before {
+    vertical-align: middle;
+    content: "\e9c2";
+}
+.icon-cloud-upload:before {
+    vertical-align: middle;
+    content: "\e9c3";
+}
+.icon-cloud-check:before {
+    vertical-align: middle;
+    content: "\e9c4";
+}
+.icon-download2:before {
+    vertical-align: middle;
+    content: "\e9c5";
+}
+.icon-upload2:before {
+    vertical-align: middle;
+    content: "\e9c6";
+}
+.icon-download3:before {
+    vertical-align: middle;
+    content: "\e9c7";
+}
+.icon-upload3:before {
+    vertical-align: middle;
+    content: "\e9c8";
+}
+.icon-sphere:before {
+    vertical-align: middle;
+    content: "\e9c9";
+}
+.icon-earth:before {
+    vertical-align: middle;
+    content: "\e9ca";
+}
+.icon-link:before {
+    vertical-align: middle;
+    content: "\e9cb";
+}
+.icon-flag:before {
+    vertical-align: middle;
+    content: "\e9cc";
+}
+.icon-attachment:before {
+    vertical-align: middle;
+    content: "\e9cd";
+}
+.icon-eye:before {
+    vertical-align: middle;
+    content: "\e9ce";
+}
+.icon-eye-plus:before {
+    vertical-align: middle;
+    content: "\e9cf";
+}
+.icon-eye-minus:before {
+    vertical-align: middle;
+    content: "\e9d0";
+}
+.icon-eye-blocked:before {
+    vertical-align: middle;
+    content: "\e9d1";
+}
+.icon-bookmark:before {
+    vertical-align: middle;
+    content: "\e9d2";
+}
+.icon-bookmarks:before {
+    vertical-align: middle;
+    content: "\e9d3";
+}
+.icon-sun:before {
+    vertical-align: middle;
+    content: "\e9d4";
+}
+.icon-contrast:before {
+    vertical-align: middle;
+    content: "\e9d5";
+}
+.icon-brightness-contrast:before {
+    vertical-align: middle;
+    content: "\e9d6";
+}
+.icon-star-empty:before {
+    vertical-align: middle;
+    content: "\e9d7";
+}
+.icon-star-half:before {
+    vertical-align: middle;
+    content: "\e9d8";
+}
+.icon-star-full:before {
+    vertical-align: middle;
+    content: "\e9d9";
+}
+.icon-heart:before {
+    vertical-align: middle;
+    content: "\e9da";
+}
+.icon-heart-broken:before {
+    vertical-align: middle;
+    content: "\e9db";
+}
+.icon-man:before {
+    vertical-align: middle;
+    content: "\e9dc";
+}
+.icon-woman:before {
+    vertical-align: middle;
+    content: "\e9dd";
+}
+.icon-man-woman:before {
+    vertical-align: middle;
+    content: "\e9de";
+}
+.icon-happy:before {
+    vertical-align: middle;
+    content: "\e9df";
+}
+.icon-happy2:before {
+    vertical-align: middle;
+    content: "\e9e0";
+}
+.icon-smile:before {
+    vertical-align: middle;
+    content: "\e9e1";
+}
+.icon-smile2:before {
+    vertical-align: middle;
+    content: "\e9e2";
+}
+.icon-tongue:before {
+    vertical-align: middle;
+    content: "\e9e3";
+}
+.icon-tongue2:before {
+    vertical-align: middle;
+    content: "\e9e4";
+}
+.icon-sad:before {
+    vertical-align: middle;
+    content: "\e9e5";
+}
+.icon-sad2:before {
+    vertical-align: middle;
+    content: "\e9e6";
+}
+.icon-wink:before {
+    vertical-align: middle;
+    content: "\e9e7";
+}
+.icon-wink2:before {
+    vertical-align: middle;
+    content: "\e9e8";
+}
+.icon-grin:before {
+    vertical-align: middle;
+    content: "\e9e9";
+}
+.icon-grin2:before {
+    vertical-align: middle;
+    content: "\e9ea";
+}
+.icon-cool:before {
+    vertical-align: middle;
+    content: "\e9eb";
+}
+.icon-cool2:before {
+    vertical-align: middle;
+    content: "\e9ec";
+}
+.icon-angry:before {
+    vertical-align: middle;
+    content: "\e9ed";
+}
+.icon-angry2:before {
+    vertical-align: middle;
+    content: "\e9ee";
+}
+.icon-evil:before {
+    vertical-align: middle;
+    content: "\e9ef";
+}
+.icon-evil2:before {
+    vertical-align: middle;
+    content: "\e9f0";
+}
+.icon-shocked:before {
+    vertical-align: middle;
+    content: "\e9f1";
+}
+.icon-shocked2:before {
+    vertical-align: middle;
+    content: "\e9f2";
+}
+.icon-baffled:before {
+    vertical-align: middle;
+    content: "\e9f3";
+}
+.icon-baffled2:before {
+    vertical-align: middle;
+    content: "\e9f4";
+}
+.icon-confused:before {
+    vertical-align: middle;
+    content: "\e9f5";
+}
+.icon-confused2:before {
+    vertical-align: middle;
+    content: "\e9f6";
+}
+.icon-neutral:before {
+    vertical-align: middle;
+    content: "\e9f7";
+}
+.icon-neutral2:before {
+    vertical-align: middle;
+    content: "\e9f8";
+}
+.icon-hipster:before {
+    vertical-align: middle;
+    content: "\e9f9";
+}
+.icon-hipster2:before {
+    vertical-align: middle;
+    content: "\e9fa";
+}
+.icon-wondering:before {
+    vertical-align: middle;
+    content: "\e9fb";
+}
+.icon-wondering2:before {
+    vertical-align: middle;
+    content: "\e9fc";
+}
+.icon-sleepy:before {
+    vertical-align: middle;
+    content: "\e9fd";
+}
+.icon-sleepy2:before {
+    vertical-align: middle;
+    content: "\e9fe";
+}
+.icon-frustrated:before {
+    vertical-align: middle;
+    content: "\e9ff";
+}
+.icon-frustrated2:before {
+    vertical-align: middle;
+    content: "\ea00";
+}
+.icon-crying:before {
+    vertical-align: middle;
+    content: "\ea01";
+}
+.icon-crying2:before {
+    vertical-align: middle;
+    content: "\ea02";
+}
+.icon-point-up:before {
+    vertical-align: middle;
+    content: "\ea03";
+}
+.icon-point-right:before {
+    vertical-align: middle;
+    content: "\ea04";
+}
+.icon-point-down:before {
+    vertical-align: middle;
+    content: "\ea05";
+}
+.icon-point-left:before {
+    vertical-align: middle;
+    content: "\ea06";
+}
+.icon-warning:before {
+    vertical-align: middle;
+    content: "\ea07";
+}
+.icon-notification:before {
+    vertical-align: middle;
+    content: "\ea08";
+}
+.icon-question:before {
+    vertical-align: middle;
+    content: "\ea09";
+}
+.icon-plus:before {
+    vertical-align: middle;
+    content: "\ea0a";
+}
+.icon-minus:before {
+    vertical-align: middle;
+    content: "\ea0b";
+}
+.icon-info:before {
+    vertical-align: middle;
+    content: "\ea0c";
+}
+.icon-cancel-circle:before {
+    vertical-align: middle;
+    content: "\ea0d";
+}
+.icon-blocked:before {
+    vertical-align: middle;
+    content: "\ea0e";
+}
+.icon-cross:before {
+    vertical-align: middle;
+    content: "\ea0f";
+}
+.icon-checkmark:before {
+    vertical-align: middle;
+    content: "\ea10";
+}
+.icon-checkmark2:before {
+    vertical-align: middle;
+    content: "\ea11";
+}
+.icon-spell-check:before {
+    vertical-align: middle;
+    content: "\ea12";
+}
+.icon-enter:before {
+    vertical-align: middle;
+    content: "\ea13";
+}
+.icon-exit:before {
+    vertical-align: middle;
+    content: "\ea14";
+}
+.icon-play2:before {
+    vertical-align: middle;
+    content: "\ea15";
+}
+.icon-pause:before {
+    vertical-align: middle;
+    content: "\ea16";
+}
+.icon-stop:before {
+    vertical-align: middle;
+    content: "\ea17";
+}
+.icon-previous:before {
+    vertical-align: middle;
+    content: "\ea18";
+}
+.icon-next:before {
+    vertical-align: middle;
+    content: "\ea19";
+}
+.icon-backward:before {
+    vertical-align: middle;
+    content: "\ea1a";
+}
+.icon-forward2:before {
+    vertical-align: middle;
+    content: "\ea1b";
+}
+.icon-play3:before {
+    vertical-align: middle;
+    content: "\ea1c";
+}
+.icon-pause2:before {
+    vertical-align: middle;
+    content: "\ea1d";
+}
+.icon-stop2:before {
+    vertical-align: middle;
+    content: "\ea1e";
+}
+.icon-backward2:before {
+    vertical-align: middle;
+    content: "\ea1f";
+}
+.icon-forward3:before {
+    vertical-align: middle;
+    content: "\ea20";
+}
+.icon-first:before {
+    vertical-align: middle;
+    content: "\ea21";
+}
+.icon-last:before {
+    vertical-align: middle;
+    content: "\ea22";
+}
+.icon-previous2:before {
+    vertical-align: middle;
+    content: "\ea23";
+}
+.icon-next2:before {
+    vertical-align: middle;
+    content: "\ea24";
+}
+.icon-eject:before {
+    vertical-align: middle;
+    content: "\ea25";
+}
+.icon-volume-high:before {
+    vertical-align: middle;
+    content: "\ea26";
+}
+.icon-volume-medium:before {
+    vertical-align: middle;
+    content: "\ea27";
+}
+.icon-volume-low:before {
+    vertical-align: middle;
+    content: "\ea28";
+}
+.icon-volume-mute:before {
+    vertical-align: middle;
+    content: "\ea29";
+}
+.icon-volume-mute2:before {
+    vertical-align: middle;
+    content: "\ea2a";
+}
+.icon-volume-increase:before {
+    vertical-align: middle;
+    content: "\ea2b";
+}
+.icon-volume-decrease:before {
+    vertical-align: middle;
+    content: "\ea2c";
+}
+.icon-loop:before {
+    vertical-align: middle;
+    content: "\ea2d";
+}
+.icon-loop2:before {
+    vertical-align: middle;
+    content: "\ea2e";
+}
+.icon-infinite:before {
+    vertical-align: middle;
+    content: "\ea2f";
+}
+.icon-shuffle:before {
+    vertical-align: middle;
+    content: "\ea30";
+}
+.icon-arrow-up-left:before {
+    vertical-align: middle;
+    content: "\ea31";
+}
+.icon-arrow-up:before {
+    vertical-align: middle;
+    content: "\ea32";
+}
+.icon-arrow-up-right:before {
+    vertical-align: middle;
+    content: "\ea33";
+}
+.icon-arrow-right:before {
+    vertical-align: middle;
+    content: "\ea34";
+}
+.icon-arrow-down-right:before {
+    vertical-align: middle;
+    content: "\ea35";
+}
+.icon-arrow-down:before {
+    vertical-align: middle;
+    content: "\ea36";
+}
+.icon-arrow-down-left:before {
+    vertical-align: middle;
+    content: "\ea37";
+}
+.icon-arrow-left:before {
+    vertical-align: middle;
+    content: "\ea38";
+}
+.icon-arrow-up-left2:before {
+    vertical-align: middle;
+    content: "\ea39";
+}
+.icon-arrow-up2:before {
+    vertical-align: middle;
+    content: "\ea3a";
+}
+.icon-arrow-up-right2:before {
+    vertical-align: middle;
+    content: "\ea3b";
+}
+.icon-arrow-right2:before {
+    vertical-align: middle;
+    content: "\ea3c";
+}
+.icon-arrow-down-right2:before {
+    vertical-align: middle;
+    content: "\ea3d";
+}
+.icon-arrow-down2:before {
+    vertical-align: middle;
+    content: "\ea3e";
+}
+.icon-arrow-down-left2:before {
+    vertical-align: middle;
+    content: "\ea3f";
+}
+.icon-arrow-left2:before {
+    vertical-align: middle;
+    content: "\ea40";
+}
+.icon-circle-up:before {
+    vertical-align: middle;
+    content: "\ea41";
+}
+.icon-circle-right:before {
+    vertical-align: middle;
+    content: "\ea42";
+}
+.icon-circle-down:before {
+    vertical-align: middle;
+    content: "\ea43";
+}
+.icon-circle-left:before {
+    vertical-align: middle;
+    content: "\ea44";
+}
+.icon-tab:before {
+    vertical-align: middle;
+    content: "\ea45";
+}
+.icon-move-up:before {
+    vertical-align: middle;
+    content: "\ea46";
+}
+.icon-move-down:before {
+    vertical-align: middle;
+    content: "\ea47";
+}
+.icon-sort-alpha-asc:before {
+    vertical-align: middle;
+    content: "\ea48";
+}
+.icon-sort-alpha-desc:before {
+    vertical-align: middle;
+    content: "\ea49";
+}
+.icon-sort-numeric-asc:before {
+    vertical-align: middle;
+    content: "\ea4a";
+}
+.icon-sort-numberic-desc:before {
+    vertical-align: middle;
+    content: "\ea4b";
+}
+.icon-sort-amount-asc:before {
+    vertical-align: middle;
+    content: "\ea4c";
+}
+.icon-sort-amount-desc:before {
+    vertical-align: middle;
+    content: "\ea4d";
+}
+.icon-command:before {
+    vertical-align: middle;
+    content: "\ea4e";
+}
+.icon-shift:before {
+    vertical-align: middle;
+    content: "\ea4f";
+}
+.icon-ctrl:before {
+    vertical-align: middle;
+    content: "\ea50";
+}
+.icon-opt:before {
+    vertical-align: middle;
+    content: "\ea51";
+}
+.icon-checkbox-checked:before {
+    vertical-align: middle;
+    content: "\ea52";
+}
+.icon-checkbox-unchecked:before {
+    vertical-align: middle;
+    content: "\ea53";
+}
+.icon-radio-checked:before {
+    vertical-align: middle;
+    content: "\ea54";
+}
+.icon-radio-checked2:before {
+    vertical-align: middle;
+    content: "\ea55";
+}
+.icon-radio-unchecked:before {
+    vertical-align: middle;
+    content: "\ea56";
+}
+.icon-crop:before {
+    vertical-align: middle;
+    content: "\ea57";
+}
+.icon-make-group:before {
+    vertical-align: middle;
+    content: "\ea58";
+}
+.icon-ungroup:before {
+    vertical-align: middle;
+    content: "\ea59";
+}
+.icon-scissors:before {
+    vertical-align: middle;
+    content: "\ea5a";
+}
+.icon-filter:before {
+    vertical-align: middle;
+    content: "\ea5b";
+}
+.icon-font:before {
+    vertical-align: middle;
+    content: "\ea5c";
+}
+.icon-ligature:before {
+    vertical-align: middle;
+    content: "\ea5d";
+}
+.icon-ligature2:before {
+    vertical-align: middle;
+    content: "\ea5e";
+}
+.icon-text-height:before {
+    vertical-align: middle;
+    content: "\ea5f";
+}
+.icon-text-width:before {
+    vertical-align: middle;
+    content: "\ea60";
+}
+.icon-font-size:before {
+    vertical-align: middle;
+    content: "\ea61";
+}
+.icon-bold:before {
+    vertical-align: middle;
+    content: "\ea62";
+}
+.icon-underline:before {
+    vertical-align: middle;
+    content: "\ea63";
+}
+.icon-italic:before {
+    vertical-align: middle;
+    content: "\ea64";
+}
+.icon-strikethrough:before {
+    vertical-align: middle;
+    content: "\ea65";
+}
+.icon-omega:before {
+    vertical-align: middle;
+    content: "\ea66";
+}
+.icon-sigma:before {
+    vertical-align: middle;
+    content: "\ea67";
+}
+.icon-page-break:before {
+    vertical-align: middle;
+    content: "\ea68";
+}
+.icon-superscript:before {
+    vertical-align: middle;
+    content: "\ea69";
+}
+.icon-subscript:before {
+    vertical-align: middle;
+    content: "\ea6a";
+}
+.icon-superscript2:before {
+    vertical-align: middle;
+    content: "\ea6b";
+}
+.icon-subscript2:before {
+    vertical-align: middle;
+    content: "\ea6c";
+}
+.icon-text-color:before {
+    vertical-align: middle;
+    content: "\ea6d";
+}
+.icon-pagebreak:before {
+    vertical-align: middle;
+    content: "\ea6e";
+}
+.icon-clear-formatting:before {
+    vertical-align: middle;
+    content: "\ea6f";
+}
+.icon-table:before {
+    vertical-align: middle;
+    content: "\ea70";
+}
+.icon-table2:before {
+    vertical-align: middle;
+    content: "\ea71";
+}
+.icon-insert-template:before {
+    vertical-align: middle;
+    content: "\ea72";
+}
+.icon-pilcrow:before {
+    vertical-align: middle;
+    content: "\ea73";
+}
+.icon-ltr:before {
+    vertical-align: middle;
+    content: "\ea74";
+}
+.icon-rtl:before {
+    vertical-align: middle;
+    content: "\ea75";
+}
+.icon-section:before {
+    vertical-align: middle;
+    content: "\ea76";
+}
+.icon-paragraph-left:before {
+    vertical-align: middle;
+    content: "\ea77";
+}
+.icon-paragraph-center:before {
+    vertical-align: middle;
+    content: "\ea78";
+}
+.icon-paragraph-right:before {
+    vertical-align: middle;
+    content: "\ea79";
+}
+.icon-paragraph-justify:before {
+    vertical-align: middle;
+    content: "\ea7a";
+}
+.icon-indent-increase:before {
+    vertical-align: middle;
+    content: "\ea7b";
+}
+.icon-indent-decrease:before {
+    vertical-align: middle;
+    content: "\ea7c";
+}
+.icon-share:before {
+    vertical-align: middle;
+    content: "\ea7d";
+}
+.icon-new-tab:before {
+    vertical-align: middle;
+    content: "\ea7e";
+}
+.icon-new-tab-after:after {
+    vertical-align: middle;
+    content: "\ea7e";
+}
+.icon-embed:before {
+    vertical-align: middle;
+    content: "\ea7f";
+}
+.icon-embed2:before {
+    vertical-align: middle;
+    content: "\ea80";
+}
+.icon-terminal:before {
+    vertical-align: middle;
+    content: "\ea81";
+}
+.icon-share2:before {
+    vertical-align: middle;
+    content: "\ea82";
+}
+.icon-mail:before {
+    vertical-align: middle;
+    content: "\ea83";
+}
+.icon-mail2:before {
+    vertical-align: middle;
+    content: "\ea84";
+}
+.icon-mail3:before {
+    vertical-align: middle;
+    content: "\ea85";
+}
+.icon-mail4:before {
+    vertical-align: middle;
+    content: "\ea86";
+}
+.icon-amazon:before {
+    vertical-align: middle;
+    content: "\ea87";
+}
+.icon-google:before {
+    vertical-align: middle;
+    content: "\ea88";
+}
+.icon-google2:before {
+    vertical-align: middle;
+    content: "\ea89";
+}
+.icon-google3:before {
+    vertical-align: middle;
+    content: "\ea8a";
+}
+.icon-google-plus:before {
+    vertical-align: middle;
+    content: "\ea8b";
+}
+.icon-google-plus2:before {
+    vertical-align: middle;
+    content: "\ea8c";
+}
+.icon-google-plus3:before {
+    vertical-align: middle;
+    content: "\ea8d";
+}
+.icon-hangouts:before {
+    vertical-align: middle;
+    content: "\ea8e";
+}
+.icon-google-drive:before {
+    vertical-align: middle;
+    content: "\ea8f";
+}
+.icon-facebook:before {
+    vertical-align: middle;
+    content: "\ea90";
+}
+.icon-facebook2:before {
+    vertical-align: middle;
+    content: "\ea91";
+}
+.icon-instagram:before {
+    vertical-align: middle;
+    content: "\ea92";
+}
+.icon-whatsapp:before {
+    vertical-align: middle;
+    content: "\ea93";
+}
+.icon-spotify:before {
+    vertical-align: middle;
+    content: "\ea94";
+}
+.icon-telegram:before {
+    vertical-align: middle;
+    content: "\ea95";
+}
+.icon-twitter:before {
+    vertical-align: middle;
+    content: "\ea96";
+}
+.icon-vine:before {
+    vertical-align: middle;
+    content: "\ea97";
+}
+.icon-vk:before {
+    vertical-align: middle;
+    content: "\ea98";
+}
+.icon-renren:before {
+    vertical-align: middle;
+    content: "\ea99";
+}
+.icon-sina-weibo:before {
+    vertical-align: middle;
+    content: "\ea9a";
+}
+.icon-rss:before {
+    vertical-align: middle;
+    content: "\ea9b";
+}
+.icon-rss2:before {
+    vertical-align: middle;
+    content: "\ea9c";
+}
+.icon-youtube:before {
+    vertical-align: middle;
+    content: "\ea9d";
+}
+.icon-youtube2:before {
+    vertical-align: middle;
+    content: "\ea9e";
+}
+.icon-twitch:before {
+    vertical-align: middle;
+    content: "\ea9f";
+}
+.icon-vimeo:before {
+    vertical-align: middle;
+    content: "\eaa0";
+}
+.icon-vimeo2:before {
+    vertical-align: middle;
+    content: "\eaa1";
+}
+.icon-lanyrd:before {
+    vertical-align: middle;
+    content: "\eaa2";
+}
+.icon-flickr:before {
+    vertical-align: middle;
+    content: "\eaa3";
+}
+.icon-flickr2:before {
+    vertical-align: middle;
+    content: "\eaa4";
+}
+.icon-flickr3:before {
+    vertical-align: middle;
+    content: "\eaa5";
+}
+.icon-flickr4:before {
+    vertical-align: middle;
+    content: "\eaa6";
+}
+.icon-dribbble:before {
+    vertical-align: middle;
+    content: "\eaa7";
+}
+.icon-behance:before {
+    vertical-align: middle;
+    content: "\eaa8";
+}
+.icon-behance2:before {
+    vertical-align: middle;
+    content: "\eaa9";
+}
+.icon-deviantart:before {
+    vertical-align: middle;
+    content: "\eaaa";
+}
+.icon-500px:before {
+    vertical-align: middle;
+    content: "\eaab";
+}
+.icon-steam:before {
+    vertical-align: middle;
+    content: "\eaac";
+}
+.icon-steam2:before {
+    vertical-align: middle;
+    content: "\eaad";
+}
+.icon-dropbox:before {
+    vertical-align: middle;
+    content: "\eaae";
+}
+.icon-onedrive:before {
+    vertical-align: middle;
+    content: "\eaaf";
+}
+.icon-github:before {
+    vertical-align: middle;
+    content: "\eab0";
+}
+.icon-npm:before {
+    vertical-align: middle;
+    content: "\eab1";
+}
+.icon-basecamp:before {
+    vertical-align: middle;
+    content: "\eab2";
+}
+.icon-trello:before {
+    vertical-align: middle;
+    content: "\eab3";
+}
+.icon-wordpress:before {
+    vertical-align: middle;
+    content: "\eab4";
+}
+.icon-joomla:before {
+    vertical-align: middle;
+    content: "\eab5";
+}
+.icon-ello:before {
+    vertical-align: middle;
+    content: "\eab6";
+}
+.icon-blogger:before {
+    vertical-align: middle;
+    content: "\eab7";
+}
+.icon-blogger2:before {
+    vertical-align: middle;
+    content: "\eab8";
+}
+.icon-tumblr:before {
+    vertical-align: middle;
+    content: "\eab9";
+}
+.icon-tumblr2:before {
+    vertical-align: middle;
+    content: "\eaba";
+}
+.icon-yahoo:before {
+    vertical-align: middle;
+    content: "\eabb";
+}
+.icon-yahoo2:before {
+    vertical-align: middle;
+    content: "\eabc";
+}
+.icon-tux:before {
+    vertical-align: middle;
+    content: "\eabd";
+}
+.icon-appleinc:before {
+    vertical-align: middle;
+    content: "\eabe";
+}
+.icon-finder:before {
+    vertical-align: middle;
+    content: "\eabf";
+}
+.icon-android:before {
+    vertical-align: middle;
+    content: "\eac0";
+}
+.icon-windows:before {
+    vertical-align: middle;
+    content: "\eac1";
+}
+.icon-windows8:before {
+    vertical-align: middle;
+    content: "\eac2";
+}
+.icon-soundcloud:before {
+    vertical-align: middle;
+    content: "\eac3";
+}
+.icon-soundcloud2:before {
+    vertical-align: middle;
+    content: "\eac4";
+}
+.icon-skype:before {
+    vertical-align: middle;
+    content: "\eac5";
+}
+.icon-reddit:before {
+    vertical-align: middle;
+    content: "\eac6";
+}
+.icon-hackernews:before {
+    vertical-align: middle;
+    content: "\eac7";
+}
+.icon-wikipedia:before {
+    vertical-align: middle;
+    content: "\eac8";
+}
+.icon-linkedin:before {
+    vertical-align: middle;
+    content: "\eac9";
+}
+.icon-linkedin2:before {
+    vertical-align: middle;
+    content: "\eaca";
+}
+.icon-lastfm:before {
+    vertical-align: middle;
+    content: "\eacb";
+}
+.icon-lastfm2:before {
+    vertical-align: middle;
+    content: "\eacc";
+}
+.icon-delicious:before {
+    vertical-align: middle;
+    content: "\eacd";
+}
+.icon-stumbleupon:before {
+    vertical-align: middle;
+    content: "\eace";
+}
+.icon-stumbleupon2:before {
+    vertical-align: middle;
+    content: "\eacf";
+}
+.icon-stackoverflow:before {
+    vertical-align: middle;
+    content: "\ead0";
+}
+.icon-pinterest:before {
+    vertical-align: middle;
+    content: "\ead1";
+}
+.icon-pinterest2:before {
+    vertical-align: middle;
+    content: "\ead2";
+}
+.icon-xing:before {
+    vertical-align: middle;
+    content: "\ead3";
+}
+.icon-xing2:before {
+    vertical-align: middle;
+    content: "\ead4";
+}
+.icon-flattr:before {
+    vertical-align: middle;
+    content: "\ead5";
+}
+.icon-foursquare:before {
+    vertical-align: middle;
+    content: "\ead6";
+}
+.icon-yelp:before {
+    vertical-align: middle;
+    content: "\ead7";
+}
+.icon-paypal:before {
+    vertical-align: middle;
+    content: "\ead8";
+}
+.icon-chrome:before {
+    vertical-align: middle;
+    content: "\ead9";
+}
+.icon-firefox:before {
+    vertical-align: middle;
+    content: "\eada";
+}
+.icon-IE:before {
+    vertical-align: middle;
+    content: "\eadb";
+}
+.icon-edge:before {
+    vertical-align: middle;
+    content: "\eadc";
+}
+.icon-safari:before {
+    vertical-align: middle;
+    content: "\eadd";
+}
+.icon-opera:before {
+    vertical-align: middle;
+    content: "\eade";
+}
+.icon-file-pdf:before {
+    vertical-align: middle;
+    content: "\eadf";
+}
+.icon-file-openoffice:before {
+    vertical-align: middle;
+    content: "\eae0";
+}
+.icon-file-word:before {
+    vertical-align: middle;
+    content: "\eae1";
+}
+.icon-file-excel:before {
+    vertical-align: middle;
+    content: "\eae2";
+}
+.icon-libreoffice:before {
+    vertical-align: middle;
+    content: "\eae3";
+}
+.icon-html-five:before {
+    vertical-align: middle;
+    content: "\eae4";
+}
+.icon-html-five2:before {
+    vertical-align: middle;
+    content: "\eae5";
+}
+.icon-css3:before {
+    vertical-align: middle;
+    content: "\eae6";
+}
+.icon-git:before {
+    vertical-align: middle;
+    content: "\eae7";
+}
+.icon-codepen:before {
+    vertical-align: middle;
+    content: "\eae8";
+}
+.icon-svg:before {
+    vertical-align: middle;
+    content: "\eae9";
+}
+.icon-IcoMoon:before {
+    vertical-align: middle;
+    content: "\eaea";
+}
+.icon-uni21:before {
+    vertical-align: middle;
+    content: "\21";
+}
+.icon-uni22:before {
+    vertical-align: middle;
+    content: "\22";
+}
+.icon-uni23:before {
+    vertical-align: middle;
+    content: "\23";
+}
+.icon-uni24:before {
+    vertical-align: middle;
+    content: "\24";
+}
+.icon-uni25:before {
+    vertical-align: middle;
+    content: "\25";
+}
+.icon-uni26:before {
+    vertical-align: middle;
+    content: "\26";
+}
+.icon-uni27:before {
+    vertical-align: middle;
+    content: "\27";
+}
+.icon-uni28:before {
+    vertical-align: middle;
+    content: "\28";
+}
+.icon-uni29:before {
+    vertical-align: middle;
+    content: "\29";
+}
+.icon-uni2A:before {
+    vertical-align: middle;
+    content: "\2a";
+}
+.icon-uni2B:before {
+    vertical-align: middle;
+    content: "\2b";
+}
+.icon-uni2C:before {
+    vertical-align: middle;
+    content: "\2c";
+}
+.icon-uni2D:before {
+    vertical-align: middle;
+    content: "\2d";
+}
+.icon-uni2E:before {
+    vertical-align: middle;
+    content: "\2e";
+}
+.icon-uni2F:before {
+    vertical-align: middle;
+    content: "\2f";
+}
+.icon-uni30:before {
+    vertical-align: middle;
+    content: "\30";
+}
+.icon-uni31:before {
+    vertical-align: middle;
+    content: "\31";
+}
+.icon-uni32:before {
+    vertical-align: middle;
+    content: "\32";
+}
+.icon-uni33:before {
+    vertical-align: middle;
+    content: "\33";
+}
+.icon-uni34:before {
+    vertical-align: middle;
+    content: "\34";
+}
+.icon-uni35:before {
+    vertical-align: middle;
+    content: "\35";
+}
+.icon-uni36:before {
+    vertical-align: middle;
+    content: "\36";
+}
+.icon-uni37:before {
+    vertical-align: middle;
+    content: "\37";
+}
+.icon-uni38:before {
+    vertical-align: middle;
+    content: "\38";
+}
+.icon-uni39:before {
+    vertical-align: middle;
+    content: "\39";
+}
+.icon-uni3A:before {
+    vertical-align: middle;
+    content: "\3a";
+}
+.icon-uni3B:before {
+    vertical-align: middle;
+    content: "\3b";
+}
+.icon-uni3C:before {
+    vertical-align: middle;
+    content: "\3c";
+}
+.icon-uni3D:before {
+    vertical-align: middle;
+    content: "\3d";
+}
+.icon-uni3E:before {
+    vertical-align: middle;
+    content: "\3e";
+}
+.icon-uni3F:before {
+    vertical-align: middle;
+    content: "\3f";
+}
+.icon-uni40:before {
+    vertical-align: middle;
+    content: "\40";
+}
+.icon-uni41:before {
+    vertical-align: middle;
+    content: "\41";
+}
+.icon-uni42:before {
+    vertical-align: middle;
+    content: "\42";
+}
+.icon-uni43:before {
+    vertical-align: middle;
+    content: "\43";
+}
+.icon-uni44:before {
+    vertical-align: middle;
+    content: "\44";
+}
+.icon-uni45:before {
+    vertical-align: middle;
+    content: "\45";
+}
+.icon-uni46:before {
+    vertical-align: middle;
+    content: "\46";
+}
+.icon-uni47:before {
+    vertical-align: middle;
+    content: "\47";
+}
+.icon-uni48:before {
+    vertical-align: middle;
+    content: "\48";
+}
+.icon-uni49:before {
+    vertical-align: middle;
+    content: "\49";
+}
+.icon-uni4A:before {
+    vertical-align: middle;
+    content: "\4a";
+}
+.icon-uni4B:before {
+    vertical-align: middle;
+    content: "\4b";
+}
+.icon-uni4C:before {
+    vertical-align: middle;
+    content: "\4c";
+}
+.icon-uni4D:before {
+    vertical-align: middle;
+    content: "\4d";
+}
+.icon-uni4E:before {
+    vertical-align: middle;
+    content: "\4e";
+}
+.icon-uni4F:before {
+    vertical-align: middle;
+    content: "\4f";
+}
+.icon-uni50:before {
+    vertical-align: middle;
+    content: "\50";
+}
+.icon-uni51:before {
+    vertical-align: middle;
+    content: "\51";
+}
+.icon-uni52:before {
+    vertical-align: middle;
+    content: "\52";
+}
+.icon-uni53:before {
+    vertical-align: middle;
+    content: "\53";
+}
+.icon-uni54:before {
+    vertical-align: middle;
+    content: "\54";
+}
+.icon-uni55:before {
+    vertical-align: middle;
+    content: "\55";
+}
+.icon-uni56:before {
+    vertical-align: middle;
+    content: "\56";
+}
+.icon-uni57:before {
+    vertical-align: middle;
+    content: "\57";
+}
+.icon-uni58:before {
+    vertical-align: middle;
+    content: "\58";
+}
+.icon-uni59:before {
+    vertical-align: middle;
+    content: "\59";
+}
+.icon-uni5A:before {
+    vertical-align: middle;
+    content: "\5a";
+}
+.icon-uni5B:before {
+    vertical-align: middle;
+    content: "\5b";
+}
+.icon-uni5C:before {
+    vertical-align: middle;
+    content: "\5c";
+}
+.icon-uni5D:before {
+    vertical-align: middle;
+    content: "\5d";
+}
+.icon-uni5E:before {
+    vertical-align: middle;
+    content: "\5e";
+}
+.icon-uni5F:before {
+    vertical-align: middle;
+    content: "\5f";
+}
+.icon-uni60:before {
+    vertical-align: middle;
+    content: "\60";
+}
+.icon-uni61:before {
+    vertical-align: middle;
+    content: "\61";
+}
+.icon-uni62:before {
+    vertical-align: middle;
+    content: "\62";
+}
+.icon-uni63:before {
+    vertical-align: middle;
+    content: "\63";
+}
+.icon-uni64:before {
+    vertical-align: middle;
+    content: "\64";
+}
+.icon-uni65:before {
+    vertical-align: middle;
+    content: "\65";
+}
+.icon-uni66:before {
+    vertical-align: middle;
+    content: "\66";
+}
+.icon-uni67:before {
+    vertical-align: middle;
+    content: "\67";
+}
+.icon-uni68:before {
+    vertical-align: middle;
+    content: "\68";
+}
+.icon-uni69:before {
+    vertical-align: middle;
+    content: "\69";
+}
+.icon-uni6A:before {
+    vertical-align: middle;
+    content: "\6a";
+}
+.icon-uni6B:before {
+    vertical-align: middle;
+    content: "\6b";
+}
+.icon-uni6C:before {
+    vertical-align: middle;
+    content: "\6c";
+}
+.icon-uni6D:before {
+    vertical-align: middle;
+    content: "\6d";
+}
+.icon-uni6E:before {
+    vertical-align: middle;
+    content: "\6e";
+}
+.icon-uni6F:before {
+    vertical-align: middle;
+    content: "\6f";
+}
+.icon-uni70:before {
+    vertical-align: middle;
+    content: "\70";
+}
+.icon-uni71:before {
+    vertical-align: middle;
+    content: "\71";
+}
+.icon-uni72:before {
+    vertical-align: middle;
+    content: "\72";
+}
+.icon-uni73:before {
+    vertical-align: middle;
+    content: "\73";
+}
+.icon-uni74:before {
+    vertical-align: middle;
+    content: "\74";
+}
+.icon-uni75:before {
+    vertical-align: middle;
+    content: "\75";
+}
+.icon-uni76:before {
+    vertical-align: middle;
+    content: "\76";
+}
+.icon-uni77:before {
+    vertical-align: middle;
+    content: "\77";
+}
+.icon-uni78:before {
+    vertical-align: middle;
+    content: "\78";
+}
+.icon-uni79:before {
+    vertical-align: middle;
+    content: "\79";
+}
+.icon-uni7A:before {
+    vertical-align: middle;
+    content: "\7a";
+}
+.icon-uni7B:before {
+    vertical-align: middle;
+    content: "\7b";
+}
+.icon-uni7C:before {
+    vertical-align: middle;
+    content: "\7c";
+}
+.icon-uni7D:before {
+    vertical-align: middle;
+    content: "\7d";
+}
+.icon-uni7E:before {
+    vertical-align: middle;
+    content: "\7e";
+}
+.icon-uniA9:before {
+    vertical-align: middle;
+    content: "\a9";
+}
+

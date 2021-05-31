@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../asset/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../asset/js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../asset/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../asset/js/dragscroll/dragscroll.js"></script>
+    <script type="text/javascript" src="../asset/js/sticky/jquery.sticky.js"></script>
+    <script type="text/javascript" src="../asset/js/tweenmax/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../asset/js/tweenmax/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="../asset/js/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="../asset/js/selectric/jquery.selectric.min.js"></script>
+    <script type="text/javascript" src="../asset/js/ui.js"></script>
+    <title>idasystem</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerWrap">
+            <div class="statusWrap">
+                <h1 class="logo"><a href="#a;"><img src="../asset/images/common/logo.png"></a></h1>
+                <div class="subject">회원정보</div>
+                <ul>
+                    <li class="logout">
+                        <a href="#a;">로그아웃</a>
+                    </li>
+                    <li class="manager">
+                        <i class="profile" style="background: url(../asset/images/common/img_manager.png) no-repeat 50% 50%;"></i>
+                        <span class="name">조인성</span>
+                    </li>
+                    <li class="time">
+                        <i class="ico"></i>
+                        <span class="now">2021.03.08 12:40:13</span>
+                    </li>
+                    <li class="ip">
+                        <span class="title">IP</span>
+                        <span class="address">211.118.108.207</span>
+                    </li>
+                    <li class="switchWrap">
+                        <label class="switch">
+                            <input type="checkbox" checked="">
+                            <span class="switchSlider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="menuWrap">
+                <div class="menuBtn">
+                    <a href="#a;" class="menu"></a>
+                </div>
+                <div class="snb">
+                    <!-- <a href="#a;" class="depth1"><span class="ico icon1">서비스 관리(1뎁스)</span></a> -->
+                    <a href="#a;" class="depth1">
+                        <div class="iconArea icon"><i class="dash menu01"></i></div>
+                        <span class="font">권한관리</span>
+                    </a>
+                    <div class="depth2">
+                        <ul>
+                            <li>
+                                <a href="#a;">운영자등록</a>
+                            </li>
+                            <li>
+                                <a href="#a;">운영자역할등록</a>
+                            </li>
+                            <li>
+                                <a href="#a;">개인정보VIEW</a>
+                            </li>
+                            <li>
+                                <a href="#a;">엑셀다운로드(일반)</a>
+                            </li>
+                            <li>
+                                <a href="#a;">엑셀다운로드(개인정보)</a>
+                            </li>
+                            <li>
+                                <a href="#a;" class="on">사이트관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="naviWrap">
+                <div class="scrollWrap">
+                    <ul class="naviDep1">
+                        <li>
+                            <a href="#a;">기본 설정</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">기관(기업)기본정보</a></li>
+                                <li><a href="#a;">접속IP관리</a></li>
+                                <li><a href="#a;">이용약관</a></li>
+                                <li><a href="#a;">개인정보취급방침</a></li>
+                                <li><a href="#a;">이메일무단수집거부</a></li>
+                                <li><a href="#a;">기본SMS설정</a></li>
+                                <li><a href="#a;">공통코드관리</a></li>
+                                <li><a href="#a;">메시지관리</a></li>
+                                <li><a href="#a;">메뉴관리</a></li>
+                                <li><a href="#a;">콘텐츠관리</a></li>
+                                <li><a href="#a;">콘텐츠폴더관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">회원 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">회원리스트</a></li>
+                                <li><a href="#a;">회원가입</a></li>
+                                <li><a href="#a;">회원등록불가능ID</a></li>
+                                <li><a href="#a;">휴면회원</a></li>
+                                <li><a href="#a;">탈퇴회원</a></li>
+                                <li><a href="#a;">그룹관리</a></li>
+                                <li><a href="#a;">기본등급관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;" class="on">권한 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">운영자등록</a></li>
+                                <li><a href="#a;">운영자역할등록</a></li>
+                                <li><a href="#a;">개인정보VIEW</a></li>
+                                <li><a href="#a;">엑셀다운로드(일반)</a></li>
+                                <li><a href="#a;">엑셀다운로드(개인정보)</a></li>
+                                <li><a href="#a;">사이트관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">서비스 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">사용자홈페이지관리</a></li>
+                                <li><a href="#a;">전체게시판</a></li>
+                                <li><a href="#a;">공지사항</a></li>
+                                <li><a href="#a;">갤러리게시판</a></li>
+                                <li><a href="#a;">영상게시판</a></li>
+                                <li><a href="#a;">FAQ</a></li>
+                                <li><a href="#a;">1:1문의</a></li>
+                                <li><a href="#a;">배너관리</a></li>
+                                <li><a href="#a;">팝업관리</a></li>
+                                <li><a href="#a;">일정관리</a></li>
+                                <li><a href="#a;">관련사이트링크</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">강좌/강의 관리</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">강좌관리</a></li>
+                                <li><a href="#a;">강의(프로그램)관리</a></li>
+                                <li><a href="#a;">수강신청관리</a></li>
+                                <li><a href="#a;">이수자관리</a></li>
+                                <li><a href="#a;">개설강좌인원통계</a></li>
+                                <li><a href="#a;">수료증발급관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">통계</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">사용자로그인이력</a></li>
+                                <li><a href="#a;">사용자페이지접근이력</a></li>
+                                <li><a href="#a;">OS별통계</a></li>
+                                <li><a href="#a;">지역별통계</a></li>
+                                <li><a href="#a;">운영체제통계</a></li>
+                                <li><a href="#a;">브라우저통계</a></li>
+                                <li><a href="#a;">접속통계</a></li>
+                                <li><a href="#a;">방문자접속경로</a></li>
+                                <li><a href="#a;">로그인통계</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#a;">UMS 설정</a>
+                            <ul class="naviDep2">
+                                <li><a href="#a;">문자</a></li>
+                                <li><a href="#a;">메일</a></li>
+                                <li><a href="#a;">카카오알림</a></li>
+                                <li><a href="#a;">PUSH</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body contentsWrap">
+        <div class="contents scrollWrap">
+            <div class="wrap">
+                <p class="subTitle">사이트 관리 프로그램</p>
+                <div class="divTable row">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">사이트 구분</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="selc1" class="invisible"></label>
+                                    <select name="selc1" id="selc1">
+                                        <option value="selc1">옵션</option>
+                                        <option value="selc1">옵션1</option>
+                                        <option value="selc1">옵션2</option>
+                                        <option value="selc1">옵션3</option>
+                                        <option value="selc1">옵션4</option>
+                                        <option value="selc1">옵션5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">사이트명</div>
+                            <div class="divTableCell width85">
+                                <label for="inp1" class="invisible"></label>
+                                <input type="text" name="inp1" id="inp1">
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">윈도우 타이틀</div>
+                            <div class="divTableCell width85">
+                                <label for="inp2" class="invisible"></label>
+                                <input type="text" name="inp2" id="inp2">
+                            </div>
+                        </div>
+                        <!-- 도메인 ui 변경 210416 -->
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">도메인</div>
+                            <div class="divTableCell width85">
+                                <div class="domainWrap">
+                                    <div class="radioWrap">
+                                        <input type="radio" name="domainRadio" id="domainRadio1">
+                                        <label for="domainRadio1">서브도메인</label>
+                                    </div>
+                                    <div class="radioWrap">
+                                        <input type="radio" name="domainRadio" id="domainRadio2">
+                                        <label for="domainRadio2">커뮤니티도메인</label>
+                                    </div>
+                                    <div class="inBlock width30 marginR5">
+                                        <label for="inpDomain" class="invisible"></label>
+                                        <input type="text" name="inpDomain" id="inpDomain">
+                                    </div>
+                                    <div class="inBlock">
+                                        <a href="#a;" class="btn small do">추가</a>
+                                    </div>
+                                </div>
+                                <div class="domainWrap">
+                                    <div class="radioWrap">
+                                        <input type="radio" name="domainRadio" id="domainRadio1">
+                                        <label for="domainRadio1">서브도메인</label>
+                                    </div>
+                                    <div class="radioWrap">
+                                        <input type="radio" name="domainRadio" id="domainRadio2">
+                                        <label for="domainRadio2">커뮤니티도메인</label>
+                                    </div>
+                                    <div class="inBlock width30 marginR5">
+                                        <label for="inpDomain" class="invisible"></label>
+                                        <input type="text" name="inpDomain" id="inpDomain">
+                                    </div>
+                                    <div class="inBlock">
+                                        <a href="#a;" class="btn small do">추가</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //도메인 -->
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">사이트 소개</div>
+                            <div class="divTableCell width85">
+                                <label for="txtA1" class="invisible"></label>
+                                <textarea name="txtA1" id="txtA1" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">운영자</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="selc2" class="invisible"></label>
+                                    <select name="selc2" id="selc2">
+                                        <option value="selc2">옵션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">도메인</div>
+                            <div class="divTableCell width85">
+                                <div class="flex">
+                                    <div class="http"> http://&nbsp;&nbsp;</div>
+                                    <label for="inp2" class="invisible"></label>
+                                    <input type="text" name="inp2" id="inp2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">실제 사용되는 URL</div>
+                            <div class="divTableCell width85">
+                                <div class="flex">
+                                    <div class="http"> http://&nbsp;&nbsp;</div>
+                                    <label for="inp3" class="invisible"></label>
+                                    <input type="text" name="inp3" id="inp3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">모바일 URL</div>
+                            <div class="divTableCell width85">
+                                <div class="flex">
+                                    <div class="http"> http://&nbsp;&nbsp;</div>
+                                    <label for="inp4" class="invisible"></label>
+                                    <input type="text" name="inp4" id="inp4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">생성일자</div>
+                            <div class="divTableCell width85">2020-01-26</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">서비스 종류</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="selc3" class="invisible"></label>
+                                    <select name="selc3" id="selc3">
+                                        <option value="selc3">옵션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">사이트 레이아웃</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="selc4" class="invisible"></label>
+                                    <select name="selc4" id="selc4">
+                                        <option value="selc4">옵션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">사이트 테마</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="selc5" class="invisible"></label>
+                                    <select name="selc5" id="selc5">
+                                        <option value="selc5">옵션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">사이트 스킨</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="selc6" class="invisible"></label>
+                                    <select name="selc6" id="selc6">
+                                        <option value="selc6">옵션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">사이트 언어</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="selc7" class="invisible"></label>
+                                    <select name="selc7" id="selc7">
+                                        <option value="selc7">옵션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">로그인 레벨</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="selc8" class="invisible"></label>
+                                    <select name="selc8" id="selc8">
+                                        <option value="selc8">옵션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">만족도조사여부</div>
+                            <div class="divTableCell width85">
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk1" id="chk1">
+                                    <label for="chk1">체크박스1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">회원제 운영여부</div>
+                            <div class="divTableCell width85">
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk2" id="chk2">
+                                    <label for="chk2">체크박스1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">개인정보보호방침</div>
+                            <div class="divTableCell width85">
+                                <label for="txtA2" class="invisible"></label>
+                                <textarea name="txtA2" id="txtA2" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">개인정보 사용 데이터</div>
+                            <div class="divTableCell width85">
+                                <label for="txtA3" class="invisible"></label>
+                                <textarea name="txtA3" id="txtA3" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">담당자명</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="inp5" class="invisible"></label>
+                                    <input type="text" name="inp5" id="inp5">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">담당자 전화번호</div>
+                            <div class="divTableCell width85">
+                                <div class="flex width50">
+                                    <input type="text" name="inp6" id="inp6">
+                                    <span class="part">&nbsp;-&nbsp;</span>
+                                    <input type="text" name="inp7" id="inp7">
+                                    <span class="part">&nbsp;-&nbsp;</span>
+                                    <input type="text" name="inp8" id="inp8">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">담당자 e-mail</div>
+                            <div class="divTableCell width85">
+                                <div class="flex width70">
+                                    <input type="text" name="inp9" id="inp9">
+                                    <span class="part">&nbsp;@&nbsp;</span>
+                                    <input type="text" name="inp10" id="inp10" class="marginR10">
+                                    <label for="selc9" class="invisible"></label>
+                                    <select name="selc9" id="selc9">
+                                        <option value="selc9">옵션</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">담당부서</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="inp11" class="invisible"></label>
+                                    <input type="text" name="inp11" id="inp11">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">출력순서</div>
+                            <div class="divTableCell width85">
+                                <div class="width30">
+                                    <label for="inp12" class="invisible"></label>
+                                    <input type="text" name="inp12" id="inp12">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">사용여부</div>
+                            <div class="divTableCell width85">
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk3" id="chk3">
+                                    <label for="chk3">체크박스1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableHead width15">CMS 관리대상 여부</div>
+                            <div class="divTableCell width85">
+                                <div class="chkWrap">
+                                    <input type="checkbox" name="chk4" id="chk4">
+                                    <label for="chk4">체크박스1</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnWrap right marginT40">
+                    <a href="#a;" class="btn large do">확인</a>
+                    <a href="#a;" class="btn large undo">삭제</a>
+                    <a href="#a;" class="btn large undo">취소</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerWrap">Copyright ©2021 IDASYSTEM. ALL RIGHT RESERVED.</div>
+    </footer>
+</body>
+
+</html>
