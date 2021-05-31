@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* css Reset */
+header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption{display:block}
+
+body{margin:0;padding:0;font-family:'Noto Sans KR', sans-serif; font-size:14px;font-weight:400;color:#000;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;overflow-x:hidden;}
+p,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,select,button,code,label,em,span,strong{margin:0;padding:0;border:0; font: inherit; color:inherit;letter-spacing:-.5px;word-break:keep-all;}
+form{display:inline;margin:none}
+img,fieldset{border:0}
+hr{display:none}
+li{list-style:none}
+em,address{font-style:normal}
+label,input,select,textarea{vertical-align:middle;-webkit-appearance:none}
+legend{position:absolute;left:-5000px;font-size:0;overflow:hidden}
+table { width: 100%; table-layout: fixed; border-collapse:collapse;border-spacing:0;}
+table, td, th, tr { border-collapse: collapse }
+table, td, th { border-spacing: 0; font-weight: normal }
+td, th { border-collapse: collapse }
+caption{position:relative;left:-5000px;height:0;line-height:0;text-indent:-5000px;overflow:hidden}
+a{/*outline:none;*/ color: inherit}
+a:link,a:active,a:visited,a{text-decoration:none;font:inherit;color:inherit}
+a:hover{text-decoration:none;color:inherit}
+label, input, button, select, img {vertical-align:middle}
+button{cursor:pointer;outline:none;background:none}
+input[type="button"],input[type="text"],input[type="image"],input[type="submit"],input[type="password"],input[type="tel"],input[type="number"],select,textarea{-webkit-appearance:none;-moz-appearance:none;border-radius:0;box-sizing:border-box; color:#000;outline: none;}
+input[type="checkbox"]{-webkit-appearance:checkbox;-moz-appearance:checkbox;}
+input[type="radio"]{-webkit-appearance:radio;-moz-appearance:radio;}
+textarea{resize:none;box-sizing:border-box;}
+select{box-sizing:border-box;}
+select::-ms-expand{display:none;}
+select:focus,input[type="text"]:focus,input[type="password"]:focus,input[type="tel"]:focus,input[type="number"]:focus,input[type="email"]:focus,textarea:focus{border:1px solid #f68e14 !important; box-shadow: 1px 1px 5px 2px rgba(246, 142, 20, 0.3);}
+::-webkit-input-placeholder { color: #888; }
+::-moz-placeholder { color: #888; opacity: 1; }
+input:-ms-input-placeholder { color: #888; }
+textarea:-ms-input-placeholder { color: #888; }

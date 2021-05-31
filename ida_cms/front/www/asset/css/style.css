@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+/* 회원가입 */
+.joinStep{font-size: 0;}
+.joinStep li{display: inline-block;}
+
