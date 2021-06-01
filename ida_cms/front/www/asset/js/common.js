@@ -192,7 +192,7 @@ function resetFn(){
 	$('.oneDepth > li > a').removeClass('on');
 	$('.twoDepth').hide();
 	$('.locationWrap .depthWrap > li').removeClass('on');	
-	$('.locationWrap depthWrap .others').hide();
+	$('.locationWrap .depthWrap .others').hide();
 	$('.locationWrap .share').removeClass('on');
 	$('.locationWrap .shareWrap').hide();
 }

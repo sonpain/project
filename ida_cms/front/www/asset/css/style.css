@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-/* 회원가입 */
-.joinStep ul{display: flex; margin-bottom: 50px;}
+/* 회원가입*/
+.joinStep ul{display: flex; margin-bottom: 40px;}
 .joinStep li{width: 100%; text-align: center; font-size: 17px; color: #666; line-height: 66px; border: 1px solid #dfdfdf; position: relative;}
 .joinStep li~li{border-left: 0;}
-.joinStep li:before{content: ''; position: absolute; top: -1px; right: -23px; width: 23px; height: 68px; background: url(../images/common/step_arrow.png) no-repeat 0 0;}
+.joinStep li:before{content: ''; position: absolute; top: -1px; right: -23px; width: 23px; height: 68px; background: url(../images/common/step_arrow.png) no-repeat 0 0; z-index: 1;}
 .joinStep li:last-child:before{content: none;}
 .joinStep li.on{background-color: #f68e14; border: 1px solid #f68e14; color: #fff; font-weight: 500;}
 .joinStep li.on:before{background: url(../images/common/step_arrow_on.png) no-repeat 0 0;}
@@ -29,7 +29,7 @@
 .joinWrap .contWrap .agreeWrap .chkWrap label:before{top: 3px;}
 .joinWrap .contWrap .box .paragraph .txt.gray{color: #767676;}
 .joinWrap .contWrap .subTxt{font-size: 15px; color: #333; margin: -10px 0 15px;}
-.joinWrap .contWrap .certification{border: 1px solid #e3e3e3; background:#f9f9f9; padding: 29px; margin-bottom: 50px;}
+.joinWrap .contWrap .certification{border: 1px solid #e3e3e3; background:#f9f9f9; padding: 29px;}
 .joinWrap .contWrap .certification .bgWrap{border: 1px solid #ececec; background:#fff; padding: 16px 40px;}
 .joinWrap .contWrap .certification .way{padding: 24px 30px; position: relative;}
 .joinWrap .contWrap .certification .way .radioWrap{position: absolute; top: 50%; left: 30px; transform: translateY(-50%); margin-right: 0;}
@@ -42,6 +42,20 @@
 .joinWrap .contWrap .certification .way .txtWrap .tit{font-size: 19px; margin-bottom: 5px;}
 .joinWrap .contWrap .certification .way .txtWrap .txt{font-size: 16px; color: #767676;}
 .joinWrap .contWrap .certification .way~.way{border-top: 1px solid #e3e3e3;}
+
+.joinForm{max-width: 640px; margin: 0 auto;}
+.joinForm .completed{line-height: 70px; color: #fff; font-weight: 500; font-size: 15px; text-align: center; background-color: #a9a9a9; margin-bottom: 20px;}
+.joinForm .inputWrap{margin-bottom: 10px;}
+.joinForm .inputWrap:last-child{margin-bottom: 0;}
+.joinForm .inputWrap input{height: 60px; line-height: 60px;}
+.joinForm .inputWrap.id{position: relative;}
+.joinForm .inputWrap.id input{padding-right: 177px;}
+.joinForm .inputWrap.id .doubleChk{position: absolute; top: 0; right: 0; width: 162px; height: 60px; line-height: 58px; font-size: 15px; font-weight: 500; color: #fff; text-align: center; background-color: #f69c32; border: 1px solid #f68e14; box-sizing: border-box; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+.joinForm .inputWrap.id .doubleChk:hover{background-color: #ffa63b; }
+
+.joinWrap .greetings{text-align: center; font-size: 28px; color: #888; margin: 45px 0 20px;}
+.joinWrap .greetings strong{font-weight: 700; color: #000;}
+
 
 @media only screen and (max-width:900px){
     .joinStep ul{margin-bottom: 35px;}
@@ -56,7 +70,7 @@
     .subTitleWrap .subTxt{font-size: 14px;}
 
     .joinWrap .contWrap{margin-bottom: 40px;}
-    .joinWrap .contWrap h4{font-size: 16px; margin-bottom: 15px;}
+    .joinWrap .contWrap h4{font-size: 15px; margin-bottom: 15px;}
     .joinWrap .contWrap .box{height: 155px; padding: 15px;}
     .joinWrap .contWrap .box .paragraph .tit,.joinWrap .contWrap .box .paragraph .txt{font-size: 14px;}
     .joinWrap .contWrap .agreeWrap{padding: 15px 0;}
@@ -74,6 +88,17 @@
     .joinWrap .contWrap .certification .way .txtWrap{display: none;}
     .joinWrap .contWrap .certification .way~.way{border-top: 0; border-left: 1px solid #d0d0d0;}
 
+    .joinForm .completed{line-height: 40px; font-size: 14px; font-weight: 700; margin-bottom: 15px;}
+    .joinForm .inputWrap{margin-bottom: 5px;}
+    .joinForm .inputWrap input{height: 40px; line-height: 40px; font-size: 14px;}
+    .joinForm .inputWrap.id input{padding-right: 102px;}
+    .joinForm .inputWrap.id .doubleChk{height: 40px; line-height: 38px; width: 87px; font-size: 14px;}
+    .joinForm .inputWrap.id .doubleChk .pcOnly{display: none;}
+
+    .joinWrap .greetings{margin: -10px 0 10px; font-size: 15px;}
+    .joinWrap .greetings .block{display: block;}
+
+    
 
 
 }
