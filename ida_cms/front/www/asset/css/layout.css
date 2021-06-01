@@ -97,14 +97,8 @@ body, html { min-width: 360px; }
 .locationWrap .utilWrap .print{background: url(../images/common/ico_print.png) no-repeat 50% 50%;}
 
 .contents{min-height: 360px;}
+.mainTitleWrap{display: none;}
 .content{max-width: 1280px; margin: 0 auto; padding: 66px 20px 120px;}
-.mainTitleWrap{margin-bottom: 40px;}
-.mainTitleWrap h2{font-size: 30px; color: #222; font-weight: 700; text-align: center; padding-bottom: 8px; position: relative; margin-bottom: 20px;}
-.mainTitleWrap h2:before{content: ''; position: absolute; bottom: 0; left: 0; right: 0; margin: auto; width: 71px; height: 1px; background: #222;}
-.mainTitleWrap .subTxt{font-size: 15px; color: #888; text-align: center;}
-.mainTitleWrap.mc{display: none;}
-.mainTitleWrap.mc h2{padding-bottom: 0; margin-bottom: 0;}
-.mainTitleWrap.mc h2:before{content: none;}
 
 footer{background: #1f1f1f;}
 .footerWrap{max-width: 1280px; margin: 0 auto; position: relative; padding: 104px 0;}
@@ -181,9 +175,10 @@ footer{background: #1f1f1f;}
 	.locationWrap .depthWrap > li .others li a:hover{background: none; color: #333; font-weight: 700;}
 	.locationWrap .utilWrap .shareWrap{width: 100%;}
 
-	.content{padding: 30px 15px 60px;}
-	.content .mainTitleWrap{display: block !important; margin-bottom: 30px;}
-	.content .mainTitleWrap h2{font-size: 24px;}
+	.mainTitleWrap{display: block !important; margin: 35px 15px 30px;}
+	.mainTitleWrap h2{font-size: 24px; font-weight: 700; text-align: center;}
+	.content{padding: 0 15px 60px;}
+	
 
 	.footerWrap{padding: 0;}
 	.footerWrap .relatedSiteWrap{position: relative; right: 0;}

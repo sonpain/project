@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
     <link href="../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
     <link href="../asset/css/base.css" rel="stylesheet" type="text/css" />
     <link href="../asset/css/common.css" rel="stylesheet" type="text/css" />
@@ -123,7 +124,7 @@
     <div class="body contentsWrap">
         <div class="subVisualWrap sub1">
             <div class="titleWrap">
-                <p class="title"><span>일반게시판 LIST</span></p>
+                <p class="title"><span>회원가입</span></p>
             </div>
         </div>
         <div class="locationWrap">
@@ -170,20 +171,123 @@
             </div>
         </div>
         <div class="contents" id="bodyWrap">
+            <div class="mainTitleWrap">
+                <h2>회원가입</h2>
+            </div>
             <!-- content에 페이지별 클래스명 추가 -->
             <div class="content">
                 <div class="joinStep">
                     <ul>
-                        <li>01. 약관동의</li>
+                        <li class="on">01. 약관동의</li>
                         <li>02. 회원정보입력</li>
                         <li>03. 회원가입완료</li>
                     </ul>
                 </div>
-                <div class="mainTitleWrap">
-                    <h2>회원약관동의</h2>
+                <div class="subTitleWrap">
+                    <h3>회원약관동의</h3>
                     <p class="subTxt">회원가입을 위해서는 회원약관, 개인정보수집 및 이용동의, 개인정보 취급위탁 동의에 동의하셔야 합니다.</p>
                 </div>
-                
+                <div class="joinWrap">
+                    <div class="contWrap">
+                        <h4>회원약관</h4>
+                        <div class="box">
+                            <div class="paragraph">
+                                <p class="tit">제 1조 (목적)</p>
+                                <p class="txt">본 약관은 A (이하 ‘회사’ 라 합니다)가 인터넷 상에서 제공하는 모든 서비스의 이용조건 및 절차에 관한 사항을 규정함을 목적으로
+                                    합니다. </p>
+                            </div>
+                            <div class="paragraph">
+                                <p class="tit">제 2조 (약관에의 동의)</p>
+                                <p class="txt">회원이 되고자 하는 자가 회사가 정한 소정의 절차를 거쳐 회원등록을 하면 본 약관에 동의하는 것으로 간주합니다. </p>
+                            </div>
+                            <div class="paragraph">
+                                <p class="tit">제 3조 (약관의 효력과 개정)</p>
+                                <p class="txt">회원이 되고자 하는 자가 회사가 정한 소정의 절차를 거쳐 회원등록을 하면 본 약관에 동의하는 것으로 간주합니다. 회원이 되고자 하는
+                                    자가 회사가 정한 소정의 절차를 거쳐 회원등록을 하면 본 약관에 동의하는 것으로 간주합니다. </p>
+                            </div>
+                        </div>
+                        <div class="agreeWrap">
+                            <p>회원약관 내용에 동의하십니까? </p>
+                            <div class="chkWrap">
+                                <input type="checkbox" name="chk1" id="chk1">
+                                <label for="chk1">동의합니다.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contWrap">
+                        <h4>개인정보 수집 이용에 관한 사항 </h4>
+                        <div class="box">
+                            <div class="paragraph">
+                                <p class="txt gray">####### 은 수집한 개인정보를 다음의 목적으로 보유하고 활용합니다. </p>
+                                <div class="tbl_col marginT10">
+                                    <table>
+                                        <caption>수집하는 개인정보의 항목, 개인정보 수집 이용 목적, 개인정보 보유 및 이용기간으로 구분된 개인정보 수집 이용에 관한 사항</caption>
+                                        <colgroup>
+                                            <col style="width: 40%;">
+                                            <col style="width: 30%;">
+                                            <col style="width: 30%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">수집하는 개인정보의 항목</th>
+                                                <th scope="col">개인정보 수집 이용 목적 </th>
+                                                <th scope="col">개인정보 보유 및 이용기간 </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>성명, 회원ID, 성별, 비밀번호, 생년월일, 연락처(자낵주소, 전화번호, 휴대전화번호 ), 이메일, 직장주소, 직장전화등 부가정보 </td>
+                                                <td>개인식별, 컨텐츠 제공 <br>
+                                                    공지사항의 전달<br>
+                                                    뉴스레터 제공  </td>
+                                                <td>회원 탈퇴 시 삭제</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agreeWrap">
+                            <p>개인정보 수집 이용 내용에 동의하십니까? </p>
+                            <div class="chkWrap">
+                                <input type="checkbox" name="chk2" id="chk2">
+                                <label for="chk2">동의합니다.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contWrap">
+                        <h4>인증을 통한 본인확인</h4>
+                        <p class="subTxt">보다 안전하고 편리한 홈페이지 이용을 위해 본인인증 과정을 진행해 주세요. </p>
+                        <div class="certification">
+                            <div class="bgWrap">
+                                <div class="way phone">
+                                    <div class="radioWrap">
+                                        <input type="radio" name="radio" id="radio1">
+                                        <label for="radio1">휴대폰 인증</label>
+                                    </div>
+                                    <div class="txtWrap">
+                                        <p class="tit">휴대폰 인증</p>
+                                        <p class="txt"> 고객님 명의의 휴대폰 번호를 통해 인증합니다. 본인명의의 휴대폰을 소지하고 계시지 않을 경우, 다른 인증방식을 선택해주시기
+                                            바랍니다. </p>
+                                    </div>
+                                </div>
+                                <div class="way i-pin">
+                                    <div class="radioWrap">
+                                        <input type="radio" name="radio" id="radio2">
+                                        <label for="radio2">아이핀 인증</label>
+                                    </div>
+                                    <div class="txtWrap">
+                                        <p class="tit">아이핀 인증</p>
+                                        <p class="txt"> 인터넷 상에서 주민번호를 대신하여 아이디와 패스워드를 통해 인증합니다. 주민번호를 이용하지 않아도 회원가입 및 기타 서비스 이용이 가능합니다.   </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnWrap">
+                    <a href="#a;" class="btn large do">다음 단계</a>
+                </div>
             </div>
         </div>
     </div>

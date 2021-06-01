@@ -3,7 +3,7 @@
 /* css Reset */
 header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption{display:block}
 
-body{margin:0;padding:0;font-family:'Noto Sans KR', sans-serif; font-size:14px;font-weight:400;color:#000;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;overflow-x:hidden;}
+body{margin:0;padding:0;font-family:'Noto Sans KR', sans-serif; font-size:15px;font-weight:400;color:#000;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;overflow-x:hidden;}
 p,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,select,button,code,label,em,span,strong{margin:0;padding:0;border:0; font: inherit; color:inherit;letter-spacing:-.5px;word-break:keep-all;}
 form{display:inline;margin:none}
 img,fieldset{border:0}
