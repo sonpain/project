@@ -240,7 +240,7 @@ a.search:hover{background: #868686;}
 .board_view .uploadFile li .cont{padding: 19px 20px 19px 190px;}
 .board_view .uploadFile li .cont a{display: block;}
 .board_view .uploadFile li .cont a~a{margin-top: 5px;}
-.board_view .memo{padding: 50px 20px; font-size: 15px; color: #555;}
+.board_view .memo{padding: 50px 20px; font-size: 15px; line-height: 2.13em; color: #555;}
 .board_view .memo img{max-width: 100%;}
 .prevNextWrap{margin-top: 50px;}
 .prevNextWrap li{position: relative; height: 60px; line-height: 60px; border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2;}
@@ -276,6 +276,7 @@ a.search:hover{background: #868686;}
 .board_write th{color: #333; font-weight: 500; background: #fbfbfb; padding: 19px 10px;}
 .board_write td{color: #555; padding: 5px 10px;}
 .board_write td .col3{width: 33%;}
+.board_write textarea.conts{height: 420px;}
 
 /* datepicker */
 .datepicker *{box-sizing:border-box}
@@ -595,6 +596,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active { b
 }
 
 /* select */
+select option{font-size: 14px;}
 .selectric{border: 1px solid #dbdbdb; background: #fff;}
 .selectric .label{margin: 0 42px 0 15px; line-height: 42px; height: 42px; font-size: 15px; color: #777;}
 .selectric .button{width: 42px; height: 42px; line-height: 42px; background: #fff url(../images/common/ico_select_arrow.png) no-repeat 50% 50%;}
@@ -647,7 +649,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active { b
 	.board_view .subTableWrap li .tit{display: block; width: 75px; line-height: 45px; padding: 0 10px; font-size: 14px; background: #fff;}
 	.board_view .subTableWrap li .tit:before{content: ''; position: absolute; top: 17px; right: 0; margin: auto; width: 1px; height: 11px; background: #ccc;}
 	.board_view .subTableWrap li .cont{padding: 11px 10px 11px 95px !important; min-height: 45px; box-sizing: border-box; font-size: 14px;}
-	.board_view .memo{font-size: 14px; padding: 25px 10px;}
+	.board_view .memo{font-size: 14px; line-height: 1.66em; padding: 25px 10px;}
 	.prevNextWrap{margin-top: 25px;}
 	.prevNextWrap li{height: 45px; line-height: 45px;}
 	.prevNextWrap li .prev, .prevNextWrap li .next{left: 0; font-size: 14px; width: 75px; padding: 0 10px; box-sizing: border-box;}
@@ -666,6 +668,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active { b
 
 	.board_write th, .board_write td{font-size: 14px; padding: 10px;}
 	.board_write td .col3{width: 100%;}
+  .board_write textarea.conts{height: 310px;}
 
 	
 }

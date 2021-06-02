@@ -159,5 +159,8 @@
     .joinForm .request{line-height: 40px; font-size: 14px; font-weight: 700; margin-bottom: 15px;}
 }
 
+@media only screen and (max-width:480px){
+    .loginWrap .contWrap .list li{padding-right: 12px; margin-right: 12px;}
+}
 
 
