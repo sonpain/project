@@ -120,8 +120,8 @@ textarea{border: 1px solid #dbdbdb; box-sizing: border-box; font-size: 15px; col
 a.do,a.list{ background: #f68e14;text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);}
 a.do:hover,a.list:hover{ background: #ffa63b;}
 a.undo{background: #797979;text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);}
-a.undo:hover{background: #bdbdbd;}
-a.search{background: #6a6a6a;text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);}
+a.undo:hover{background: #868686;}
+a.search{background: #797979;text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);}
 a.search:hover{background: #868686;}
 .btnWrap{text-align: center; font-size: 0; margin-top: 50px;}
 .btnWrap.left{text-align: left;}
