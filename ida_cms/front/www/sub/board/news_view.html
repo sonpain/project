@@ -5,20 +5,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <link href="../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/base.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/common.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/layout.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../asset/js/jquery/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../asset/js/jquery/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="../asset/js/tweenmax/TweenMax.min.js"></script>
-    <script type="text/javascript" src="../asset/js/tweenmax/jquery.gsap.min.js"></script>
-    <script type="text/javascript" src="../asset/js/datepicker/datepicker.js"></script>
-    <script type="text/javascript" src="../asset/js/selectric/jquery.selectric.min.js"></script>
-    <script type="text/javascript" src="../asset/js/common.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="../../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../asset/js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../../asset/js/tweenmax/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/tweenmax/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="../../asset/js/selectric/jquery.selectric.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/slick/slick.js"></script>
+    <script type="text/javascript" src="../../asset/js/common.js"></script>
     <title>idasystem</title>
 </head>
 
@@ -124,7 +125,7 @@
     <div class="body contentsWrap">
         <div class="subVisualWrap sub1">
             <div class="titleWrap">
-                <p class="title"><span>로그인</span></p>
+                <p class="title"><span>카드뉴스형 게시판 VIEW</span></p>
             </div>
         </div>
         <div class="locationWrap">
@@ -172,61 +173,95 @@
         </div>
         <div class="contents" id="bodyWrap">
             <div class="mainTitleWrap">
-                <h2>로그인</h2>
+                <h2>카드뉴스형 게시판 VIEW</h2>
             </div>
             <!-- content에 페이지별 클래스명 추가 -->
             <div class="content">
-                <div class="loginWrap">
-                    <div class="contWrap">
-                        <p class="tit">로그인</p>
-                        <p class="subTxt">아이디와 비밀번호로 로그인해 이용하실 수 있습니다.</p>
-                        <div class="inputWrap">
-                            <label for="inp1" class="invisible">아이디</label>
-                            <input type="text" name="inp1" id="inp1" placeholder="아이디 입력">
-                            <label for="inp2" class="invisible">비밀번호</label>
-                            <input type="text" name="inp2" id="inp2" placeholder="비밀번호 입력">
-                            <a href="#a;" class="btn large do">로그인</a>
+                <div class="boardWrap">
+                    <div class="board_view gallery">
+                        <div class="titleWrap">
+                            <h3>주의! 최근에 원드라이브에서 많은 수의 파일이 삭제되었습니다. 삭제되었습니다. 삭제되었습니다. </h3>
+                            <div class="subTableWrap">
+                                <ul>
+                                    <li>
+                                        <span class="tit">등록일</span>
+                                        <span class="cont date">2021.04.25</span>
+                                    </li>
+                                    <li>
+                                        <span class="tit">조회수</span>
+                                        <span class="cont hit">231</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="list">
-                            <li><a href="#a;">아이디 찾기</a></li>
-                            <li><a href="#a;">비밀번호 찾기</a></li>
-                            <li><a href="#a;">회원가입</a></li>
+                        <div class="memo">
+                            <div class="newsImgWrap">
+                                <div class="newsImgSlider">
+                                    <div class="item">
+                                        <img src="../../asset/images/sub/img_news.jpg" alt="대체텍스트">
+                                    </div>
+                                    <div class="item">
+                                        <img src="../../asset/images/sub/img_news.jpg" alt="대체텍스트">
+                                    </div>
+                                    <div class="item">
+                                        <img src="../../asset/images/sub/img_news.jpg" alt="대체텍스트">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prevNextWrap">
+                        <ul>
+                            <li>
+                                <span class="prev">이전글</span>
+                                <p>
+                                    <a href="#a;">이전 글의 제목이 노출됩니다. </a>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="next">다음글</span>
+                                <p>
+                                    <a href="#a;">다음 글의 제목이 노출됩니다. </a>
+                                </p>
+                            </li>
                         </ul>
+                    </div>
+                    <div class="btnWrap">
+                        <a href="#a;" class="btn large list">목록</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="footerWrap">
-            <div class="relatedSiteWrap">
-                <a href="#a;"><span>관련사이트 바로가기</span></a>
-                <div class="siteList">
-                    <ul>
-                        <li><a href="#a;">관련사이트 1</a></li>
-                        <li><a href="#a;">관련사이트 2</a></li>
-                        <li><a href="#a;">관련사이트 3</a></li>
+        <footer>
+            <div class="footerWrap">
+                <div class="relatedSiteWrap">
+                    <a href="#a;"><span>관련사이트 바로가기</span></a>
+                    <div class="siteList">
+                        <ul>
+                            <li><a href="#a;">관련사이트 1</a></li>
+                            <li><a href="#a;">관련사이트 2</a></li>
+                            <li><a href="#a;">관련사이트 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="infoWrap">
+                    <ul class="footerLink">
+                        <li><a href="#a;" class="point">개인정보처리방침</a></li>
+                        <li><a href="#a;">이용약관</a></li>
+                        <li><a href="#a;">사이트맵</a></li>
                     </ul>
+                    <div class="contactWrap">
+                        <p class="tit">Contact Us</p>
+                        <p class="num">070.4077.4738</p>
+                    </div>
+                    <address>
+                        <p class="info">서울특별시 금천구 가산디지털2로 165(가산동), 백상스타타워 2차 607호</p>
+                        <p class="info">서울특별시 금천구 가산디지털2로 165(가산동), 백상스타타워 2차 607호</p>
+                        <p class="copy">Copyright(c) 2021 by idasystem. All rights reserved.</p>
+                    </address>
                 </div>
             </div>
-            <div class="infoWrap">
-                <ul class="footerLink">
-                    <li><a href="#a;" class="point">개인정보처리방침</a></li>
-                    <li><a href="#a;">이용약관</a></li>
-                    <li><a href="#a;">사이트맵</a></li>
-                </ul>
-                <div class="contactWrap">
-                    <p class="tit">Contact Us</p>
-                    <p class="num">070.4077.4738</p>
-                </div>
-                <address>
-                    <p class="info">서울특별시 금천구 가산디지털2로 165(가산동), 백상스타타워 2차 607호</p>
-                    <p class="info">서울특별시 금천구 가산디지털2로 165(가산동), 백상스타타워 2차 607호</p>
-                    <p class="copy">Copyright(c) 2021 by idasystem. All rights reserved.</p>
-                </address>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>

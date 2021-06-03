@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="../../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../asset/js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../../asset/js/tweenmax/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/tweenmax/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="../../asset/js/selectric/jquery.selectric.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/slick/slick.js"></script>
+    <script type="text/javascript" src="../../asset/js/common.js"></script>
+    <title>idasystem</title>
+</head>
+
+<body>
+    <dl id="skiptoContent">
+        <dt><strong class="invisible">바로가기 메뉴</strong></dt>
+        <dd><a href="#bodyWrap">본문 바로가기</a></dd>
+        <dd><a href="#gnbWrap">주메뉴 바로가기</a></dd>
+    </dl>
+    <header>
+        <div class="gnbBg"></div>
+        <div class="headerWrap">
+            <div class="allMenu">
+                <a href="#a;"><span>메뉴열기</span></a>
+            </div>
+            <div class="topUtilWrap">
+                <div class="topUtil">
+                    <ul>
+                        <li><a href="#a;">로그인</a></li>
+                        <li><a href="#a;">회원가입</a></li>
+                        <li><a href="#a;">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logoWrap">
+                <h1><a href="#a;">이다시스템</a></h1>
+                <a href="#a;" class="searchBtn">검색</a>
+                <div class="searchBgWrap">
+                    <div class="searchWrap">
+                        <label for="searchVal" class="invisible">검색어 입력</label>
+                        <input type="text" name="searchVal" id="searchVal" placeholder="검색어를 입력하세요.">
+                        <a href="#a;" class="search">검색</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gnbWrap" id="gnbWrap">
+                <ul class="oneDepth">
+                    <li>
+                        <a href="#a;"><span class="menu">회사소개</span></a>
+                        <ul class="twoDepth">
+                            <li><a href="#a;">사업소개</a></li>
+                            <li><a href="#a;">인사말</a></li>
+                            <li><a href="#a;">대리점소개</a></li>
+                            <li><a href="#a;">임원진소개</a></li>
+                            <li><a href="#a;">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#a;"><span class="menu">포트폴리오 포트폴리오</span></a>
+                        <ul class="twoDepth">
+                            <li><a href="#a;">사업소개</a></li>
+                            <li><a href="#a;">인사말</a></li>
+                            <li><a href="#a;">대리점소개</a></li>
+                            <li><a href="#a;">임원진소개</a></li>
+                            <li><a href="#a;">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#a;"><span class="menu">솔루션</span></a>
+                        <ul class="twoDepth">
+                            <li><a href="#a;">사업소개</a></li>
+                            <li><a href="#a;">인사말</a></li>
+                            <li><a href="#a;">대리점소개</a></li>
+                            <li><a href="#a;">임원진소개</a></li>
+                            <li><a href="#a;">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#a;"><span class="menu">이다CMS</span></a>
+                        <ul class="twoDepth">
+                            <li><a href="#a;">사업소개</a></li>
+                            <li><a href="#a;">인사말</a></li>
+                            <li><a href="#a;">대리점소개</a></li>
+                            <li><a href="#a;">임원진소개</a></li>
+                            <li><a href="#a;">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#a;"><span class="menu">고객센터</span></a>
+                        <ul class="twoDepth">
+                            <li><a href="#a;">사업소개</a></li>
+                            <li><a href="#a;">인사말</a></li>
+                            <li><a href="#a;">대리점소개</a></li>
+                            <li><a href="#a;">임원진소개</a></li>
+                            <li><a href="#a;">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#a;"><span class="menu">회사소개</span></a>
+                        <ul class="twoDepth">
+                            <li><a href="#a;">사업소개</a></li>
+                            <li><a href="#a;">인사말</a></li>
+                            <li><a href="#a;">대리점소개</a></li>
+                            <li><a href="#a;">임원진소개</a></li>
+                            <li><a href="#a;">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#a;" class="close">메뉴닫기</a>
+            </div>
+        </div>
+    </header>
+    <div class="body contentsWrap">
+        <div class="subVisualWrap sub1">
+            <div class="titleWrap">
+                <p class="title"><span>일정관리</span></p>
+            </div>
+        </div>
+        <div class="locationWrap">
+            <a href="#a;" class="home">home</a>
+            <ul class="depthWrap">
+                <li>
+                    <a href="#a;"><span class="menu">회사소개</span></a>
+                    <div class="others">
+                        <ul>
+                            <li><a href="#a;">회사소개</a></li>
+                            <li><a href="#a;">포트폴리오 포트폴리오</a></li>
+                            <li><a href="#a;">솔루션</a></li>
+                            <li><a href="#a;">이다CMS</a></li>
+                            <li><a href="#a;">고객센터</a></li>
+                            <li><a href="#a;">회사소개</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#a;"><span class="menu">인사말</span></a>
+                    <div class="others">
+                        <ul>
+                            <li><a href="#a;">사업소개</a></li>
+                            <li><a href="#a;">인사말</a></li>
+                            <li><a href="#a;">대리점소개</a></li>
+                            <li><a href="#a;">임원진소개</a></li>
+                            <li><a href="#a;">찾아오시는길</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="utilWrap">
+                <a href="#a;" class="share">공유하기</a>
+                <div class="shareWrap">
+                    <ul>
+                        <li><a href="#a;" title="새창열림">페이스북</a></li>
+                        <li><a href="#a;" title="새창열림">트위터</a></li>
+                        <li><a href="#a;" title="새창열림">카카오스토리</a></li>
+                        <li><a href="#a;" title="새창열림">네이버 밴드</a></li>
+                        <li><a href="#a;">url 복사</a></li>
+                    </ul>
+                </div>
+                <a href="#a;" class="print">인쇄</a>
+            </div>
+        </div>
+        <div class="contents" id="bodyWrap">
+            <div class="mainTitleWrap">
+                <h2>일정관리</h2>
+            </div>
+            <!-- content에 페이지별 클래스명 추가 -->
+            <div class="content">
+                <script>
+                    $().ready(function () {
+                        // 상세 레이어 팝업 내용이 길 경우 스크롤
+                        $(".scroll").mCustomScrollbar({
+                            axis: "y",
+                            theme: "dark-thick"
+                        });
+                    });
+                </script>
+                <form id="scheduleFrm" name="scheduleFrm" method="get">
+                    <input type="hidden" name="menu_idx" id="menu_idx" value="3124" />
+                    <input type="hidden" name="year" id="year" value="2021" />
+                    <input type="hidden" name="toMonth" id="toMonth" value="4" />
+                    <input type="hidden" name="option" id="option" value="" />
+                    <input type="hidden" name="SCH_DAY" id="SCH_DAY" value="" />
+                    <input type="hidden" name="calPopDayId" id="calPopDayId" value="" />
+                    <input type="hidden" name="cal_Type" id="cal_Type" value="1" />
+                    <!-- 일정관리 -->
+                    <div class="schedule_wrap cal_month">
+                        <div class="month_top">
+                            <button type="button" onclick="javascript:changeMonth('' , '');" class="btn_prev" title="이전달 일정 보기">이전</button>
+                            <span id="SCH_YEAR" class="now">2021년 4월</span>
+                            <button type="button" onclick="javascript:changeMonth('' , '');" class="btn_next" title="다음달 일정 보기">다음</button>
+                        </div>
+                        <div class="select_wrap">
+                            <div class="example">
+                                <div class="tit">선택보기 : </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" name="chairman" id="chairman" checked="">
+                                    <label for="chairman">회장</label>
+                                </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" name="president" id="president" checked="">
+                                    <label for="president">사무총장</label>
+                                </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" name="director" id="director" checked="">
+                                    <label for="director">훈련원장</label>
+                                </div>
+                            </div>
+                            <div class="legend">
+                                <div class="cont">회장</div>
+                                <div class="cont">사무총장</div>
+                                <div class="cont">훈련원장</div>
+                            </div>
+                        </div>
+                        <div class="cal_group cB" style="z-index:20;">
+                            <div class="calendar" id="month1">
+                                <table>
+                                    <caption>
+                                        <p>일정관리</p>
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th><span>SUN</span></th>
+                                            <th><span>MON</span></th>
+                                            <th><span>TUE</span></th>
+                                            <th><span>WED</span></th>
+                                            <th><span>THU</span></th>
+                                            <th><span>FRI</span></th>
+                                            <th><span>SAT</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td><span class="date" id="date1">1 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date2">2 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date3">3 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="date" id="date4">4 </span>
+                                            </td>
+                                            <td><span class="date" id="date5">5 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date6">6 </span>
+                                                <div class="cont">
+                                                    <a href="#a;" class="title chairman"><span>대한장애인보치아연맹회장 오찬 간담회</span></a>
+                                                    <div class="cal_pop chairman" id="cal_pop_4" style="display: block;">
+                                                        <b id="daySchTit_4">대한장애인보치아연맹 회장 오찬 간담회</b>
+                                                        <!-- 210423 수정 -->
+                                                        <p id="daySchCon_4" class="scroll">
+                                                            <span class="pop_cont"><span>일자 :</span> 2021년 04월 06일</span>
+                                                            <span class="pop_cont"><span>시간 :</span> 오전 10:00 ~ 오전 11:00</span>
+                                                            <span class="pop_cont"><span>장소 :</span> 사무처 회의실 </span>
+                                                            <span class="pop_cont"><span>내용 :</span> 내용노출 내용노출내용노출 내용노출내용노출 내용노출내용노출 내용노출내용노출 내용노출내용노출 내용노출내용노출 내용노출</span>
+                                                        </p>
+                                                        <!-- //210423 수정 -->
+                                                        <button type="button">닫기</button>
+                                                    </div>
+                                                    <a href="#a;" class="title president"><span>사무총장 주재 주간업무보고</span></a>
+                                                    <div class="cal_pop president" id="cal_pop_4">
+                                                        <b id="daySchTit_4">사무총장 주재 주간업무보고</b>
+                                                        <p id="daySchCon_4">일시 : 2021년 04월 06일<br> 시간 : 오전 10:00 ~ 오전 11:00<br> 장소 : 사무처 회의실 <br> 내용 : 내용노출내용노출내용노출내용노출</p>
+                                                        <button type="button">닫기</button>
+                                                    </div>
+                                                    <a href="#a;" class="title director"><span>문화체육관광위원회 전체회의</span></a>
+                                                    <div class="cal_pop director" id="cal_pop_4">
+                                                        <b id="daySchTit_4">문화체육관광위원회 전체회의</b>
+                                                        <p id="daySchCon_4">일시 : 2021년 04월 06일<br> 시간 : 오전 10:00 ~ 오전 11:00<br> 장소 : 사무처 회의실 <br> 내용 : 내용노출내용노출내용노출내용노출</p>
+                                                        <button type="button">닫기</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date7">7 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date8">8 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date9">9 </span>
+                                                <div class="cont">
+                                                    <a href="#a;" class="title president"><span>사무총장 주재 주간업무보고</span></a>
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date10">10 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="date" id="date11">11 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date12">12 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date13">13 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date14">14 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date15">15 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date16">16 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date17">17 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="date" id="date18">18 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date19">19 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date20">20 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date21">21 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date22">22 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date23">23 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date24">24 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="date" id="date25">25 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date26">26 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date27">27 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date28">28 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date29">29 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td><span class="date" id="date30">30 </span>
+                                                <div class="cont">
+                                                </div>
+                                            </td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //일정관리 -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerWrap">
+            <div class="relatedSiteWrap">
+                <a href="#a;"><span>관련사이트 바로가기</span></a>
+                <div class="siteList">
+                    <ul>
+                        <li><a href="#a;">관련사이트 1</a></li>
+                        <li><a href="#a;">관련사이트 2</a></li>
+                        <li><a href="#a;">관련사이트 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="infoWrap">
+                <ul class="footerLink">
+                    <li><a href="#a;" class="point">개인정보처리방침</a></li>
+                    <li><a href="#a;">이용약관</a></li>
+                    <li><a href="#a;">사이트맵</a></li>
+                </ul>
+                <div class="contactWrap">
+                    <p class="tit">Contact Us</p>
+                    <p class="num">070.4077.4738</p>
+                </div>
+                <address>
+                    <p class="info">서울특별시 금천구 가산디지털2로 165(가산동), 백상스타타워 2차 607호</p>
+                    <p class="info">서울특별시 금천구 가산디지털2로 165(가산동), 백상스타타워 2차 607호</p>
+                    <p class="copy">Copyright(c) 2021 by idasystem. All rights reserved.</p>
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -89,10 +89,132 @@
 .joinForm .request:hover{box-shadow: 0 0 10px 0px rgba(0,0,0,0.2) inset; background-color: #ffa63b;}
 
 /* 아이디 찾기 완료 */
-.resultTxt{margin: 50px auto 40px; max-width: 621px; background-color: #f7f7f7; padding: 19px 15px; box-sizing: border-box; font-size: 18px; color: #515151;}
-.resultTxt strong{font-size: 30px; font-weight: 700; color: #000;}
+.loginWrap .contWrap .resultTxt{margin: 50px auto 40px; max-width: 621px; background-color: #f7f7f7; padding: 19px 15px; box-sizing: border-box; font-size: 18px; color: #515151;}
+.loginWrap .contWrap .resultTxt strong{font-size: 30px; font-weight: 700; color: #000;}
 
+/* 일정관리 */
+.schedule_wrap .month_top{border-bottom: 1px solid #e9e9e9; padding: 22px 0 17px; text-align: center;}
+.schedule_wrap .month_top button{display: inline-block; width: 33px;  height: 33px; border-radius: 100%; border: 1px solid #ababab; box-sizing: border-box; font-size: 0;}
+.schedule_wrap .month_top .btn_prev{background: url(../images/common/calendar_prev.png) no-repeat 50% 50%;}
+.schedule_wrap .month_top .btn_next{background: url(../images/common/calendar_next.png) no-repeat 50% 50%;}
+.schedule_wrap .month_top .now{font-size: 25px; font-weight: 700; display: inline-block; vertical-align: middle; padding: 0 20px;}
+.schedule_wrap .select_wrap{margin: 28px 0 13px;}
+.schedule_wrap .select_wrap .example .tit{display: inline-block; vertical-align: middle; color: #424242; font-weight: 700; font-size: 12px;}
+.schedule_wrap .select_wrap .example .chk_wrap{margin-right: 15px; display: inline-block; vertical-align: top;}
+.schedule_wrap .select_wrap .example .chk_wrap input{position:absolute;left:-5000px;height:0;line-height:0;overflow:hidden}
+.schedule_wrap .select_wrap .example .chk_wrap label{ position: relative; padding-left: 22px; font-size: 12px; background-size: 100% auto !important;}
+.schedule_wrap .select_wrap .example .chk_wrap label:before{content: ''; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; background: url(../images/common/ico_chk.png) no-repeat 0 0; width: 16px; height: 16px; background-size: 100% auto !important;}
+.schedule_wrap .select_wrap .example .chk_wrap input:checked+label:before{background: url(../images/common/ico_chk_on.png) no-repeat 0 0;}
+.schedule_wrap .select_wrap .legend{text-align: right;}
+.schedule_wrap .select_wrap .legend .cont{display: inline-block; vertical-align: middle; margin-right: 15px; font-size: 12px; position: relative; padding-left: 18px;}
+.schedule_wrap .select_wrap .legend .cont:nth-child(1){color: #0056a6; font-weight: 700;}
+.schedule_wrap .select_wrap .legend .cont:nth-child(2){color: #e45d0c; font-weight: 700;}
+.schedule_wrap .select_wrap .legend .cont:nth-child(3){color: #1e970b; font-weight: 700; margin-right: 0;}
+.schedule_wrap .select_wrap .legend .cont:before{content: ''; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; width: 13px; height: 13px; border-radius: 100%;}
+.schedule_wrap .select_wrap .legend .cont:nth-child(1):before{background: #0056a6;}
+.schedule_wrap .select_wrap .legend .cont:nth-child(2):before{background: #e45d0c;}
+.schedule_wrap .select_wrap .legend .cont:nth-child(3):before{background: #1e970b;}
+.schedule_wrap .calendar{position: relative;}
+.schedule_wrap .calendar table{width:100%; table-layout: fixed; border-top: 2px solid #000; border-bottom: 2px solid #ccc;}
+.schedule_wrap .calendar table tr th{}
+.schedule_wrap .calendar table tr th span{display: block; height: 60px; line-height: 60px; background: #f7f7f7;}
+.schedule_wrap .calendar table tr th:nth-child(7n),.schedule_wrap .calendar table tr td:nth-child(7n) .date{color:#2c7a9e; font-weight: 700;}
+.schedule_wrap .calendar table tr th:nth-child(7n+1),.schedule_wrap .calendar table tr td:nth-child(7n+1) .date{color:#db5d5d; font-weight: 700;}
+.schedule_wrap .calendar table tr td{border-top:1px solid #cccccc;border-left:1px solid #cccccc;padding:10px;vertical-align:top; color: #303030; font-size: 12px;}
+.schedule_wrap .calendar table tr td:first-child{border-left: 0;}
+.schedule_wrap .calendar table tbody tr td .date{font-size: 17px; font-weight: 700; display: block; text-align: right;}
+.schedule_wrap .calendar table tbody tr td .cont{min-height: 72px;}
+.schedule_wrap .calendar table tbody tr td .cont .title{display: block; position: relative; padding-left: 13px; margin-top: 10px;}
+.schedule_wrap .calendar table tbody tr td .cont .title:first-child{margin-top: 5px;}
+.schedule_wrap .calendar table tbody tr td .cont .title:before{content: ''; position:absolute; top: 6px; left: 0; width: 6px; height: 6px; border-radius: 100%;}
+.schedule_wrap .calendar table tbody tr td .cont .title > span{word-break: break-all;}
+.schedule_wrap .calendar table tbody tr td .cont .chairman{color: #0056a6;}
+.schedule_wrap .calendar table tbody tr td .cont .president{color: #e45d0c;}
+.schedule_wrap .calendar table tbody tr td .cont .director{color: #1e970b;}
+.schedule_wrap .calendar table tbody tr td .cont .chairman:before{background: #0056a6;}
+.schedule_wrap .calendar table tbody tr td .cont .president:before{background: #e45d0c;}
+.schedule_wrap .calendar table tbody tr td .cont .director:before{background: #1e970b;}
+.schedule_wrap .calendar table tbody tr td .cont .title.on{text-decoration: underline; font-weight: 700;}
+.schedule_wrap .calendar table tbody tr td.today{background: #e0f6f7; position: relative;}
+.schedule_wrap .calendar table tbody tr td.today:before{content: '오늘'; position: absolute; top: 17px; left: 20px; font-weight: 700; color: #02b6c1;}
+.schedule_wrap .calendar .cal_pop{position: absolute;width:290px;padding:20px;box-sizing:border-box;background:#fff;border: 1px solid #000;box-sizing: border-box;z-index:1;margin-left: 13px;margin-top:3px;display: none;}
+.schedule_wrap .calendar table tbody tr:last-child .cal_pop{bottom: 0;}
+.schedule_wrap .calendar .cal_pop b{font-size:13px;}
+.schedule_wrap .calendar .cal_pop.chairman b{color: #0056a6;}
+.schedule_wrap .calendar .cal_pop.president b{color: #e45d0c;}
+.schedule_wrap .calendar .cal_pop.director b{color: #1e970b;}
+.schedule_wrap .calendar .cal_pop .scroll{max-height: 80px;}
+.schedule_wrap .calendar .cal_pop p{margin-top:10px;font-size: 12px;line-height: 20px;color: #6e6e6e;}
+.schedule_wrap .calendar .cal_pop .pop_cont{position: relative; padding-left: 35px; display: block;}
+.schedule_wrap .calendar .cal_pop .pop_cont span{position: absolute; top: 0; left: 0;}
+.schedule_wrap .calendar .cal_pop button{position: absolute;top:10px;right:10px;;width:14px;height:14px;background:url('../images/common/popup_close.png')no-repeat center;font-size: 0;}
 
+/* 통합검색 */
+.totalSearch .content{max-width: 1200px; margin: 0 auto 100px; padding: 0 10px; box-sizing: border-box;}
+.totalSearch .resultTxt{text-align: center; font-size: 30px; color: #333; padding: 81px 0 57px;}
+.totalSearch .resultTxt strong{font-weight: 700; color: #e45d0c;}
+
+.totalSearch .tab{border-top: 1px solid #e2e2e2; border-left: 1px solid #e2e2e2; font-size: 0; margin-bottom: 61px;}
+.totalSearch .tab li{display: inline-block; border-bottom: 1px solid #e2e2e2; border-right: 1px solid #e2e2e2; box-sizing: border-box; width: 25%; height: 60px;}
+.totalSearch .tab li a{display: table; width: 100%; height: 100%;}
+.totalSearch .tab li a .menu{display: table-cell; vertical-align: middle; font-size: 16px; color: #333; text-align: center;}
+.totalSearch .tab li.on{background: #f68e14; border: 1px solid #f68e14;}
+.totalSearch .tab li.on a .menu{font-size: 18px; color: #fff; font-weight: 500;}
+.totalSearch .tab li.on a .menu .num{font-weight: 300;}
+
+.totalSearch .tabConts > .list{display: none;}
+.totalSearch .tabConts > .all{display: block;}
+.totalSearch .tabConts .contWrap{margin-top: 79px; position: relative;}
+.totalSearch .tabConts .contWrap:first-child{margin-top: 0;}
+.totalSearch .tabConts .titleWrap .title{font-size: 25px; color: #000; padding: 0 60px 23px 0; border-bottom: 1px solid #868686; margin-bottom: 11px; box-sizing: border-box;}
+.totalSearch .tabConts .titleWrap .title.type2{margin-bottom: 0px;}
+.totalSearch .tabConts .titleWrap .title .count{font-weight: 300;}
+.totalSearch .tabConts .titleWrap .title .count strong{color: #f68e14; font-weight: 500;}
+.totalSearch .tabConts .more{position: absolute; top: 6.5px; right: 0; font-size: 16px; font-weight: 700; color: #333;}
+
+.totalSearch .box_list > ul{padding-top: 30px;}
+.totalSearch .box_list > ul > li{border: 1px solid #dedee4;}
+.totalSearch .box_list .listWrap{position: relative;}
+.totalSearch .box_list .listWrap .info{position: absolute; right: 40px; bottom: 35px;}
+.totalSearch .box_list .listWrap .info > .writer{display: none;}
+.totalSearch .box_list .listWrap .tit{margin-bottom: 53px;}
+.totalSearch .box_list .numWrap{display: none;}
+
+.totalSearch .tabConts .txt_list{}
+.totalSearch .tabConts .txt_list > ul > li{padding: 25px 0; border-bottom: 1px dashed #e7e7e7; box-sizing: border-box;}
+.totalSearch .tabConts .txt_list > ul > li > a{display: block;}
+.totalSearch .tabConts .txt_list > ul > li .tit{font-size: 18px; color: #000; margin-bottom: 16px;}
+.totalSearch .tabConts .txt_list > ul > li .tit .date{font-size: 14px; color: #999; padding-left: 13px;}
+.totalSearch .tabConts .txt_list > ul > li .cont{font-size: 15px; color: #666; line-height: 26px; height: 52px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box; text-overflow: ellipsis; overflow: hidden;}
+
+.totalSearch .news_list > ul{margin-bottom: 0;}
+.totalSearch .news_list > ul > li{width: 25%; margin: 0; padding:30px 20px 0 20px; border: 0;}
+.totalSearch .news_list li .titWrap{padding: 0;}
+.totalSearch .news_list li .titWrap .tit{margin: 21px 0;}
+.totalSearch .news_list li .titWrap p .line,.totalSearch .news_list li .titWrap p .view{display: none;}
+
+.totalSearch .video_list{border: 0; padding: 0;}
+.totalSearch .video_list li:first-child{padding: 30px 15px 40px 15px;}
+.totalSearch .video_list li~li{border-top: 1px dashed #e7e7e7;}
+
+.totalSearch .tabConts .txt_list .nav{font-size: 14px; color: #666; padding-top: 20px;}
+.totalSearch .tabConts .txt_list .nav strong{font-weight: 500;}
+
+/* 인사말 */
+.greet .imgWrap{text-align: center; margin: 0 30px 60px;}
+.greet .main{padding-left: 20px; border-left: 4px solid #f68e14; margin-bottom: 50px;}
+.greet .main span{display: block; font-size: 38px; line-height: 48px; color: #5f5f5f; font-family: 'NanumSquare'; font-style: italic;}
+.greet .main strong{font-weight: 700; color: #242728;}
+.greet p{font-size: 14px; line-height: 2em; color: #444;}
+.greet p~p{margin-top: 40px;}
+.greet .name{font-size: 15px; color: #222; margin-top: 100px; text-align: right;}
+.greet .name strong{font-weight: 700;}
+
+@media screen and (max-width: 1024px){
+	.totalSearch .box_list > ul > li{width: 31.6%;}
+	.totalSearch .box_list > ul > li:nth-child(2n){margin-right: 2.5%;}
+	.totalSearch .box_list > ul > li:nth-child(3n){margin-right: 0;}
+}
 
 @media only screen and (max-width:900px){
     .joinStep ul{margin-bottom: 35px;}
@@ -144,8 +266,8 @@
     .loginWrap .contWrap .list li{padding-right: 24px; margin-right: 24px;}
     .loginWrap .contWrap .list li a{font-size: 14px; font-weight: 700;}
 
-    .resultTxt{margin: 20px auto 30px; padding: 12px 15px; font-size: 14px;}
-    .resultTxt strong{font-size: 15px;}
+    .loginWrap .contWrap .resultTxt{margin: 20px auto 30px; padding: 12px 15px; font-size: 14px;}
+    .loginWrap .contWrap .resultTxt strong{font-size: 15px;}
 
     .loginWrap.search .contWrap{padding: 30px 20px 35px;}
     .loginWrap.search .contWrap .tit{display: block; font-size: 16px; margin-bottom: 10px;}
@@ -157,10 +279,41 @@
 
     .joinForm .guide{margin: 0 0 20px; font-size: 14px;}
     .joinForm .request{line-height: 40px; font-size: 14px; font-weight: 700; margin-bottom: 15px;}
+
+    .schedule_wrap .month_top{padding: 10px 0;}
+    .schedule_wrap .month_top .now{font-size: 20px;}
+    .schedule_wrap .calendar{overflow-x: auto;}
+    .schedule_wrap .calendar > table{width: 900px;}
+    .schedule_wrap .calendar table tr th span{height: 40px; line-height: 40px;}
+    .schedule_wrap .calendar table tbody tr td .date{font-size: 15px;}
+    .schedule_wrap .calendar table tbody tr td .cont{min-height: 35px;}
+
+	.totalSearch .resultTxt{font-size: 22px; padding: 40px 0 30px;}
+	.totalSearch .tabConts .titleWrap .title{font-size: 20px;}
+	.totalSearch .tabConts .titleWrap .more{top: 2.5px;}
+	
+	.totalSearch .tab{margin-bottom: 30px;}
+	.totalSearch .tab li{width: 50%; height: 40px;}
+
+	.totalSearch .tabConts .contWrap{margin-top: 40px;}
+	.totalSearch .tabConts .titleWrap .title{padding: 0 60px 12px 0;}
+	
+	.totalSearch .box_list > ul > li{width: 100%; margin-right: 0 !important;}
+	.totalSearch .box_list .listWrap .info{right: 20px; bottom: 20px;}
+	
+	.totalSearch .news_list > ul > li{width: 50%;}
+
+    .greet .imgWrap{margin: 0 15px 30px;}
+    .greet .main{padding-left: 10px; margin-bottom: 25px;}
+	.greet .main span{font-size: 20px; line-height: 30px;}
+	.greet p~p{margin-top: 20px;}
+	.greet .name{margin-top: 50px;}
 }
 
 @media only screen and (max-width:480px){
     .loginWrap .contWrap .list li{padding-right: 12px; margin-right: 12px;}
+
+    .totalSearch .news_list > ul > li{width: 100%;}
 }
 
 

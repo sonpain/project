@@ -171,6 +171,58 @@ $(document).ready(function(){
 			language: "kr"
 		});
 	}
+
+	//통합검색
+	$('.tab li').on('click', function(){
+		var idx = $(this).index();
+		//console.log(idx);
+		$('.tabConts > .list').hide();
+		$('.tabConts > .list').eq(idx).show();
+
+		$('.tab li').removeClass('on');
+		$(this).addClass('on');
+	});
+
+	//콘텐츠 열고 닫기
+	$('.descWrap .open a').on('click',function(e){
+        e.preventDefault();
+        var desc = $(this).parent().parent('.descWrap');
+        if($(desc).hasClass('on')){
+            $('.descWrap').removeClass('on');
+            $('.descWrap .open a').text('내용 펼침');
+        } else{
+            $('.descWrap').removeClass('on');
+            $(desc).addClass('on');
+            $('.descWrap .open a').text('내용 펼침');
+            $(this).text('내용 닫힘');
+        } 
+    });
+
+	//카드뉴스 slider
+	if ($('.newsImgSlider').length > 0) {
+        $(".newsImgSlider").on("init", function(event, slick){
+            $('.slick-dots').html('<li><div><span class="cur">'+parseInt(slick.currentSlide+1)+'</span><span class="all"> / '+slick.slideCount+'</span></div></li>');
+        });
+
+        $(".newsImgSlider").on("afterChange", function(event, slick, currentSlide) {
+            //console.log(currentSlide);
+            var num = currentSlide + 1;
+            $('.slick-dots .cur').text(num);
+        });
+
+        $('.newsImgSlider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 500,
+            fade: false,
+            focusOnselect: false,
+            initOnLoad: true,
+        });
+    }
 });
 
 $.fn.datepicker.dates['kr'] = {

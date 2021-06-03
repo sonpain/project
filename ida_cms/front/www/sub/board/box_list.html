@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <link href="../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/base.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/common.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/layout.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../asset/js/jquery/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../asset/js/jquery/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="../asset/js/tweenmax/TweenMax.min.js"></script>
-    <script type="text/javascript" src="../asset/js/tweenmax/jquery.gsap.min.js"></script>
-    <script type="text/javascript" src="../asset/js/datepicker/datepicker.js"></script>
-    <script type="text/javascript" src="../asset/js/selectric/jquery.selectric.min.js"></script>
-    <script type="text/javascript" src="../asset/js/common.js"></script>
+    <link href="../../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../asset/js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../../asset/js/tweenmax/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/tweenmax/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="../../asset/js/selectric/jquery.selectric.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/slick/slick.js"></script>
+    <script type="text/javascript" src="../../asset/js/common.js"></script>
     <title>idasystem</title>
 </head>
 
@@ -66,7 +68,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#a;"><span class="menu">포트폴리오 포트폴리오</span></a>
+                        <a href="#a;"><span class="menu">포트폴리오</span></a>
                         <ul class="twoDepth">
                             <li><a href="#a;">사업소개</a></li>
                             <li><a href="#a;">인사말</a></li>
@@ -123,7 +125,7 @@
     <div class="body contentsWrap">
         <div class="subVisualWrap sub1">
             <div class="titleWrap">
-                <p class="title"><span>포토게시판 LIST</span></p>
+                <p class="title"><span>일반게시판 LIST</span></p>
             </div>
         </div>
         <div class="locationWrap">
@@ -171,10 +173,10 @@
         </div>
         <div class="contents" id="bodyWrap">
             <div class="mainTitleWrap">
-                <h2>포토게시판 LIST</h2>
+                <h2>일반게시판 LIST</h2>
             </div>
             <!-- content에 페이지별 클래스명 추가 -->
-            <div class="content">                                
+            <div class="content">
                 <div class="boardWrap">
                     <div class="boardSearchWrap">
                         <div class="pageCount">
@@ -198,93 +200,108 @@
                             </fieldset>
                         </div>
                     </div>
-                    <div class="gallery_list">
+                    <div class="array">
+                        <span class="on"><a href="#a;">최신 등록순</a></span>
+                        <span><a href="#a;">공감순</a></span>
+                        <span><a href="#a;">조회순</a></span>
+                    </div>
+                    <div class="box_list">
                         <ul>
                             <li>
-                                <div class="thumWrap">
-                                    <a href="#a;"><img src="../asset/images/sub/img_thum1.jpg" alt="대체텍스트"></a>
-                                    <a href="#a;" class="utilBtn camera"></a>
-                                </div>
-                                <div class="titWrap">
-                                    <p class="gubun">[분류명]</p>
-                                    <a href="#a;" class="tit">2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구</a>
-                                    <p class="date">2019. 05. 08</p>
-                                </div>
+                                <a href="#a;">
+                                    <div class="listWrap">
+                                        <div class="infoWrap">
+                                            <p class="gubun">서울 중구</p>
+                                            <p class="info"><span class="writer">정호석</span><span class="date">2020-09-10</span></p>
+                                        </div>
+                                        <p class="tit">[지역] 청소년의 교실 밖 수업을 늘려주세요! 늘려주세요 늘려주세요 늘려... 우리나라 수업의 대부분은 주로 선생님이 앞에서 학생들을 가르치는 주입식 교육으로 진행됩니다. 이런 수업들은 학생들의 흥미를 떨어뜨리고... 2020-09-10 </p>
+                                    </div>
+                                    <div class="numWrap">
+                                        <div class="like"><span class="txt">공감</span><strong>6,548</strong></div>
+                                        <div class="comment"><span class="invisible">댓글</span>1,600</div>
+                                        <div class="view"><span class="invisible">조회</span>2,347</div>
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="thumWrap">
-                                    <a href="#a;"><img src="../asset/images/sub/img_thum2.jpg" alt="대체텍스트"></a>
-                                    <a href="#a;" class="utilBtn video"></a>
-                                </div>
-                                <div class="titWrap">
-                                    <p class="gubun">[분류명]</p>
-                                    <a href="#a;" class="tit">2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구</a>
-                                    <p class="date">2019. 05. 08</p>
-                                </div>
+                                <a href="#a;">
+                                    <div class="listWrap">
+                                        <div class="infoWrap">
+                                            <p class="gubun">자립</p>
+                                            <p class="info"><span class="writer">정호석</span><span class="date">2020-09-10</span></p>
+                                        </div>
+                                        <p class="tit">[국민] 아동 청소년 성 보호를 위한 성보호 정책을 강화시켜 주세요. 우리나라 수업의 대부분은 주로 선생님이 앞에서 학생들을 가르치는 주입식 교육으로 진행됩니다. 이런 수업들은 학생들의 흥미를 떨어뜨리고... 2020-09-10 </p>
+                                    </div>
+                                    <div class="numWrap">
+                                        <div class="like"><span class="txt">공감</span><strong>6,548</strong></div>
+                                        <div class="comment"><span class="invisible">댓글</span>1,600</div>
+                                        <div class="view"><span class="invisible">조회</span>2,347</div>
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="thumWrap">
-                                    <a href="#a;"><img src="../asset/images/sub/img_thum3.jpg" alt="대체텍스트"></a>
-                                    <a href="#a;" class="utilBtn favorites"></a>
-                                </div>
-                                <div class="titWrap">
-                                    <p class="gubun">[분류명]</p>
-                                    <a href="#a;" class="tit">2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구</a>
-                                    <p class="date">2019. 05. 08</p>
-                                </div>
+                                <a href="#a;">
+                                    <div class="listWrap">
+                                        <div class="infoWrap">
+                                            <p class="gubun">경기 화성</p>
+                                            <p class="info"><span class="writer">정호석</span><span class="date">2020-09-10</span></p>
+                                        </div>
+                                        <p class="tit">[국민] 아동 청소년 성 보호를 위한 성보호 정책을 강화시켜 주세요. 우리나라 수업의 대부분은 주로 선생님이 앞에서 학생들을 가르치는 주입식 교육으로 진행됩니다. 이런 수업들은 학생들의 흥미를 떨어뜨리고... 2020-09-10 </p>
+                                    </div>
+                                    <div class="numWrap">
+                                        <div class="like"><span class="txt">공감</span><strong>6,548</strong></div>
+                                        <div class="comment"><span class="invisible">댓글</span>1,600</div>
+                                        <div class="view"><span class="invisible">조회</span>2,347</div>
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="thumWrap">
-                                    <a href="#a;"><img src="../asset/images/sub/img_thum1.jpg" alt="대체텍스트"></a>
-                                </div>
-                                <div class="titWrap">
-                                    <p class="gubun">[분류명]</p>
-                                    <a href="#a;" class="tit">2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구</a>
-                                    <p class="date">2019. 05. 08</p>
-                                </div>
+                                <a href="#a;">
+                                    <div class="listWrap">
+                                        <div class="infoWrap">
+                                            <p class="gubun">자립</p>
+                                            <p class="info"><span class="writer">정호석</span><span class="date">2020-09-10</span></p>
+                                        </div>
+                                        <p class="tit">[국민] 아동 청소년 성 보호를 위한 성보호 정책을 강화시켜 주세요. 우리나라 수업의 대부분은 주로 선생님이 앞에서 학생들을 가르치는 주입식 교육으로 진행됩니다. 이런 수업들은 학생들의 흥미를 떨어뜨리고... 2020-09-10 </p>
+                                    </div>
+                                    <div class="numWrap">
+                                        <div class="like"><span class="txt">공감</span><strong>6,548</strong></div>
+                                        <div class="comment"><span class="invisible">댓글</span>1,600</div>
+                                        <div class="view"><span class="invisible">조회</span>2,347</div>
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="thumWrap">
-                                    <a href="#a;"><img src="../asset/images/sub/img_thum1.jpg" alt="대체텍스트"></a>
-                                </div>
-                                <div class="titWrap">
-                                    <p class="gubun">[분류명]</p>
-                                    <a href="#a;" class="tit">2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구</a>
-                                    <p class="date">2019. 05. 08</p>
-                                </div>
+                                <a href="#a;">
+                                    <div class="listWrap">
+                                        <div class="infoWrap">
+                                            <p class="gubun">자립</p>
+                                            <p class="info"><span class="writer">정호석</span><span class="date">2020-09-10</span></p>
+                                        </div>
+                                        <p class="tit">[국민] 아동 청소년 성 보호를 위한 성보호 정책을 강화시켜 주세요. 우리나라 수업의 대부분은 주로 선생님이 앞에서 학생들을 가르치는 주입식 교육으로 진행됩니다. 이런 수업들은 학생들의 흥미를 떨어뜨리고... 2020-09-10 </p>
+                                    </div>
+                                    <div class="numWrap">
+                                        <div class="like"><span class="txt">공감</span><strong>6,548</strong></div>
+                                        <div class="comment"><span class="invisible">댓글</span>1,600</div>
+                                        <div class="view"><span class="invisible">조회</span>2,347</div>
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="thumWrap">
-                                    <a href="#a;"><img src="../asset/images/sub/img_thum3.jpg" alt="대체텍스트"></a>
-                                    <a href="#a;" class="utilBtn favorites"></a>
-                                </div>
-                                <div class="titWrap">
-                                    <p class="gubun">[분류명]</p>
-                                    <a href="#a;" class="tit">2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구</a>
-                                    <p class="date">2019. 05. 08</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumWrap">
-                                    <a href="#a;"><img src="../asset/images/sub/img_thum2.jpg" alt="대체텍스트"></a>
-                                    <a href="#a;" class="utilBtn video"></a>
-                                </div>
-                                <div class="titWrap">
-                                    <p class="gubun">[분류명]</p>
-                                    <a href="#a;" class="tit">2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구</a>
-                                    <p class="date">2019. 05. 08</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumWrap">
-                                    <a href="#a;"><img src="../asset/images/sub/img_thum1.jpg" alt="대체텍스트"></a>
-                                    <a href="#a;" class="utilBtn camera"></a>
-                                </div>
-                                <div class="titWrap">
-                                    <p class="gubun">[분류명]</p>
-                                    <a href="#a;" class="tit">2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구2019년도 주요사업 위탁연구 과제 공모 1차부터 2차까지 어쩌구</a>
-                                    <p class="date">2019. 05. 08</p>
-                                </div>
+                                <a href="#a;">
+                                    <div class="listWrap">
+                                        <div class="infoWrap">
+                                            <p class="gubun">서울 중구</p>
+                                            <p class="info"><span class="writer">정호석</span><span class="date">2020-09-10</span></p>
+                                        </div>
+                                        <p class="tit">[지역] 청소년의 교실 밖 수업을 늘려주세요!</p>
+                                    </div>
+                                    <div class="numWrap">
+                                        <div class="like"><span class="txt">공감</span><strong>6,548</strong></div>
+                                        <div class="comment"><span class="invisible">댓글</span>1,600</div>
+                                        <div class="view"><span class="invisible">조회</span>2,347</div>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -306,7 +323,7 @@
                         </div>
                         <a href="#a;" class="moreBtn"><span>더보기</span></a>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </div>

@@ -5,20 +5,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <link href="../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/base.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/common.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/layout.css" rel="stylesheet" type="text/css" />
-    <link href="../asset/css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../asset/js/jquery/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../asset/js/jquery/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="../asset/js/tweenmax/TweenMax.min.js"></script>
-    <script type="text/javascript" src="../asset/js/tweenmax/jquery.gsap.min.js"></script>
-    <script type="text/javascript" src="../asset/js/datepicker/datepicker.js"></script>
-    <script type="text/javascript" src="../asset/js/selectric/jquery.selectric.min.js"></script>
-    <script type="text/javascript" src="../asset/js/common.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="../../asset/css/webFonts.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../../asset/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../asset/js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../../asset/js/tweenmax/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/tweenmax/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="../../asset/js/selectric/jquery.selectric.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/slick/slick.js"></script>
+    <script type="text/javascript" src="../../asset/js/common.js"></script>
     <title>idasystem</title>
 </head>
 
@@ -176,24 +177,25 @@
             </div>
             <!-- content에 페이지별 클래스명 추가 -->
             <div class="content">
-                <div class="joinForm">
-                    <p class="guide">* 회원가입시 등록한 정보를 입력해 주세요.</p>
-                    <a href="#a;" class="request">통신사 본인인증 요청</a>
-                    <div class="inputWrap">
-                        <label for="inp2" class="invisible">성명</label>
-                        <input type="text" name="inp2" id="inp2" placeholder="성명을 입력해 주세요.">
+                <div class="loginWrap search">
+                    <div class="contWrap phone">
+                        <p class="tit">휴대폰 인증</p>
+                        <p class="subTxt">휴대폰 인증을 통해<br> 본인 확인을 해주세요.</p>
+                        <div class="btnWrap">
+                            <a href="#a;" class="btn large do">휴대폰 인증하기</a>
+                        </div>
                     </div>
-                    <div class="inputWrap">
-                        <label for="inp6" class="invisible">이메일 주소</label>
-                        <input type="text" name="inp6" id="inp6" placeholder="가입된 이메일 주소를 입력해주세요.">
+                    <div class="contWrap email">
+                        <p class="tit">이메일 인증</p>
+                        <p class="subTxt">이메일 인증을 통해<br> 본인 확인을 해주세요.</p>
+                        <div class="btnWrap">
+                            <a href="#a;" class="btn large do">이메일 인증하기</a>
+                        </div>
                     </div>
-                </div>
-                <div class="btnWrap">
-                    <a href="#a;" class="btn large do">확인</a>
-                    <a href="#a;" class="btn large undo">취소</a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <footer>
         <div class="footerWrap">
