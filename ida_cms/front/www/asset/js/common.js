@@ -223,7 +223,45 @@ $(document).ready(function(){
             initOnLoad: true,
         });
     }
+
+	//faq
+	$('.faqWrap dl dt').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+		} else{
+			$('.faqWrap dl dt').removeClass('on');
+			$(this).addClass('on');
+		}
+	});
+
+	//댓글
+	var txta = $('.textareaWrap textarea');
+	$(txta).on('keyup', function() {
+		var idx = $(this);
+		//console.log(idx);
+		textareaH(idx);
+	});
+
+	$('.commentListWrap .reply a').on('click', function(){
+		if($(this).children('span').hasClass('on')){
+			$(this).children('span').removeClass('on');
+			$(this).parent().parent().next('.replyWrap').hide();
+		} else{
+			$('.commentListWrap .reply a').children('span').removeClass('on');
+			$(this).children('span').addClass('on');
+			$('.commentListWrap .replyWrap').hide();
+			$(this).parent().parent().next('.replyWrap').show();
+		}		
+	});
 });
+
+function textareaH(idx) {
+	//var txta = $('.textareaWrap textarea');
+	var txta = $(idx);
+	$(idx).css('height' , 'auto');
+	var txtaH = txta.prop('scrollHeight');
+	txta.css('height', txtaH+20);
+}
 
 $.fn.datepicker.dates['kr'] = {
     days: ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"],

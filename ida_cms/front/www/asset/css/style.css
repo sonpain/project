@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 회원가입*/
+/* 회원가입 공통 */
 .joinStep ul{display: flex; margin-bottom: 40px;}
 .joinStep li{width: 100%; text-align: center; font-size: 17px; color: #666; line-height: 66px; border: 1px solid #dfdfdf; position: relative;}
 .joinStep li~li{border-left: 0;}
@@ -14,6 +14,7 @@
 .subTitleWrap h3:before{content: ''; position: absolute; bottom: 0; left: 0; right: 0; margin: auto; width: 71px; height: 1px; background: #222;}
 .subTitleWrap .subTxt{font-size: 15px; color: #888; text-align: center;}
 
+/* 약관동의 */
 .joinWrap .contWrap{margin-bottom: 85px;}
 .joinWrap .contWrap:last-child{margin-bottom: 0;}
 .joinWrap .contWrap h4{font-size: 20px; font-weight: 700; margin-bottom: 20px;}
@@ -43,18 +44,25 @@
 .joinWrap .contWrap .certification .way .txtWrap .txt{font-size: 16px; color: #767676;}
 .joinWrap .contWrap .certification .way~.way{border-top: 1px solid #e3e3e3;}
 
+/* 회원정보입력 */
+/* typeA */
 .joinForm{max-width: 640px; margin: 0 auto;}
 .joinForm .completed{line-height: 70px; color: #fff; font-weight: 500; font-size: 15px; text-align: center; background-color: #a9a9a9; margin-bottom: 20px;}
 .joinForm .inputWrap{margin-bottom: 10px;}
 .joinForm .inputWrap:last-child{margin-bottom: 0;}
 .joinForm .inputWrap input{height: 60px; line-height: 60px;}
-.joinForm .inputWrap.id{position: relative;}
-.joinForm .inputWrap.id input{padding-right: 177px;}
-.joinForm .inputWrap.id .doubleChk{position: absolute; top: 0; right: 0; width: 162px; height: 60px; line-height: 58px; font-size: 15px; font-weight: 500; color: #fff; text-align: center; background-color: #f69c32; border: 1px solid #f68e14; box-sizing: border-box; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
-.joinForm .inputWrap.id .doubleChk:hover{background-color: #ffa63b; }
+.joinForm .id{position: relative;}
+.joinForm .id input{padding-right: 177px;}
+.joinForm .id .doubleChk{position: absolute; top: 0; right: 0; width: 162px; height: 60px; line-height: 58px; font-size: 15px; font-weight: 500; color: #fff; text-align: center; background-color: #f69c32; border: 1px solid #f68e14; box-sizing: border-box; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+.joinForm .id .doubleChk:hover{background-color: #ffa63b; }
+/* typeB */
+.joinForm.board_write{max-width: 100%;} 
+.joinForm.board_write .id .doubleChk{height: 44px; line-height: 42px;}
 
+/* 회원가입완료 */
 .joinWrap .greetings{text-align: center; font-size: 28px; color: #888; margin: 45px 0 20px;}
 .joinWrap .greetings strong{font-weight: 700; color: #000;}
+.joinWrap .greetings .subTxt{font-size: 20px; margin-top: 10px;}
 
 /* 로그인 */
 .loginWrap{border: 1px solid #e3e3e3; padding: 70px 0 80px; max-width: 960px; margin: 0 auto;}
@@ -82,7 +90,6 @@
 .loginWrap.search .contWrap.phone .btnWrap{background: url(../images/common/ico_phone2.png) no-repeat 50% 0;}
 .loginWrap.search .contWrap.email .btnWrap{background: url(../images/common/ico_email.png) no-repeat 50% 0;}
 .loginWrap.search .contWrap~.contWrap{border-left: 1px solid #e3e3e3;}
-
 /* type B */
 .joinForm .guide{margin: 65px 0 35px; font-size: 15px; color: #888; text-align: center;}
 .joinForm .request{line-height: 70px; color: #fff; font-weight: 500; font-size: 15px; text-align: center; background-color: #f6a13c; margin-bottom: 20px; display: block;-webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
@@ -149,6 +156,96 @@
 .schedule_wrap .calendar .cal_pop .pop_cont span{position: absolute; top: 0; left: 0;}
 .schedule_wrap .calendar .cal_pop button{position: absolute;top:10px;right:10px;;width:14px;height:14px;background:url('../images/common/popup_close.png')no-repeat center;font-size: 0;}
 
+/* 일정관리 typeB */
+.fL {float:left !important;}
+.fR {float:right !important;}
+.cB {clear:both !important;}
+.cB::after{content:"";display: block;clear: both;}
+.academicCal	{font-size:15px; }
+/*.academicCal button{outline:none;}*/
+.academicCal.cal_month .calList_con {float:left;width:calc(100% - 395px);box-sizing:border-box;margin:0 0 0 30px;}
+.academicCal.cal_month .calList_con li::before {display:none;}
+.academicCal.cal_month .calList_con li+li {border-top:none;}
+.academicCal.cal_month .calList_con .no_article {margin-top:20px;}
+.academicCal.cal_month .exclam {margin-top:15px;}
+.academicCal .month_top {position:relative;overflow:hidden;height:60px;box-sizing:border-box;padding:13px 120px;background:#51515b;font-size:0;text-align:center;}
+.academicCal .month_top>span {display:inline-block;padding:0 30px;color:#fff;font-family:'Roboto', sans-serif;font-size:32px;font-weight:500;line-height:32px;vertical-align:top;letter-spacing:-1px;}
+.academicCal .month_top .btn_prev,
+.academicCal .month_top .btn_next {display:inline-block;overflow:hidden;width:10px;height:34px;text-indent:-100px;vertical-align:top;}
+.academicCal .month_top .btn_prev {background:url('../images/common/academicCal_yPrev.png') no-repeat center;}
+.academicCal .month_top .btn_next {background:url('../images/common/academicCal_yNext.png') no-repeat center;}
+.academicCal .month_top .btn_today {position:absolute;top:14px;left:13px;width:80px;height:32px;border:1px solid #97979d;color:#fff;font-size:15px;font-weight:600;line-height:32px;}
+.academicCal .month_top .type_btnBox {overflow:hidden;position:absolute;top:16px;right:13px;width:220px;height:32px;padding-left:1px;}
+.academicCal .month_top .type_btnBox a {display:block;position:relative;float:left;overflow:hidden;height:100%;box-sizing:border-box;font-size:15px; color:#eaeaf1;padding-left:29px;}
+.academicCal .month_top .type_btnBox a~a	{margin-left:30px;}
+.academicCal .month_top .type_btnBox a.type_cal {background:url('../images/common/academicCal_month.png')no-repeat 0 0;}
+.academicCal .month_top .type_btnBox a.type_list {background:url('../images/common/academicCal_list.png')no-repeat 0 0;}
+.academicCal .month_top .type_btnBox a.type_cal.on,
+.academicCal .month_top .type_btnBox a.type_list.on {z-index:1;}
+.academicCal .month_list{overflow: hidden;height:60px;background:#f0f2f7;}
+.academicCal .month_list li{float:left;width:calc(99.9%/12);text-align: center;box-sizing:border-box;padding:10px 0;}
+.academicCal .month_list li a,
+.academicCal .month_list li button {position:relative;display:block;margin:0 auto;line-height:36px;color:#000;font-size:20px;font-weight:400;padding:0 12px;}
+.academicCal .month_list li a.on,
+.academicCal .month_list li a:hover,
+.academicCal .month_list li button.on,
+.academicCal .month_list li button:hover{font-weight:700;background:#dd3900;border-radius:50%;color:#fff;}
+.academicCal .month_type{position:absolute;top:0;left:0;width:100%;box-sizing:border-box;padding-right:15px;text-align: right;}
+.academicCal .month_type span{display: inline-block;margin-left:20px;font-size: 14px;color:#555555;}
+.academicCal .month_type span::before{content: "";display:inline-block;width: 13px;height:13px;margin:3px 4px 0 0;border-radius:50%;vertical-align:top;}
+
+.academicCal .monthTit{display:block;margin:0 auto;padding:25px 0;color:#000;font-size:30px;font-weight:500;line-height:30px;text-align: center;}
+
+.academicCal .cal_group {position:relative;}
+.academicCal.cal_month .cal_group {margin-top:80px;}
+.academicCal .cal_group table tr th {background:#fbfbfb;font-size:16px;}
+.academicCal .cal_group table tr td {padding:0; font-size:15px;}
+.academicCal .calendar {position:relative;float: left;width:365px;box-sizing:border-box;border:1px solid #eaeaf1;border-bottom:none;}
+.academicCal .calendar table{width:100%;}
+.academicCal .calendar table tr th,
+.academicCal .calendar table tr td{border-bottom:1px solid #eaeaf1;border-top:1px solid #eaeaf1;height:38px;padding:5px;color:#000;font-weight:300;text-align: center;}
+.academicCal .calendar table tr th:nth-child(7n),
+.academicCal .calendar table tr td:nth-child(7n){color:#268ed5;}
+.academicCal .calendar table tr th:nth-child(7n+1),
+.academicCal .calendar table tr td:nth-child(7n+1){color:#cb3649;}
+.academicCal .calendar table tbody tr td span{display: inline-block;width: 29px;height:29px;border-radius:50%;box-sizing:border-box;font-family:'Roboto';font-size:15px;font-weight:300;line-height:30px;letter-spacing:-1px;}
+.academicCal .calendar table tbody tr td a{display: inline-block;width: 29px;height:29px;border-radius:50%;box-sizing:border-box;font-family:'Roboto';font-size:15px;font-weight:300;line-height:30px;letter-spacing:-1px;}
+.academicCal .calendar table tbody tr td a.sched {cursor: pointer;}
+.academicCal .calendar table tbody tr td a.on {position:relative;cursor: pointer;}
+.academicCal .calendar table tbody tr td a.on::before {content:'';display:block;position:absolute;left:50%;bottom:-5px;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:#dd3900;}
+.academicCal .calendar table tbody tr td a.on span {font-size:0;height:0;width:0;line-height:0;}
+.academicCal .calendar .cal_pop{position: absolute;top: 128px;left:18%;width:64%;padding:15px;box-sizing:border-box;background: #f0f2f7;}
+.academicCal .calendar .cal_pop b{font-size:16px;line-height:16px;font-weight:500;color:#3897d8;}
+.academicCal .calendar .cal_pop p{margin-top:10px;font-size: 15px;line-height: 22px;letter-spacing: -1px;}
+.academicCal .calendar .cal_pop button{position: absolute;top:16px;right:16px;;width:12px;height:12px;background:url('../images/common/popup_close.png')no-repeat center;font-size: 0;}
+.academicCal .calList_con li span .markLine {font-size: 13px;margin-right:10px}
+.academicCal .calList_con.typeToday li {padding-left:70px;}
+.academicCal .calList_con.typeToday li strong {width:60px;}
+.academicCal .calList_con table td, .academicCal .calList_con table th	{border-left:none; border-right:none; font-size:16px ! important; }
+.academicCal .calList_con table th	{padding:15px 0 ! important;}
+.academicCal .calList_con table td	{padding:10px ! important; /*border-bottom:1px solid #f1f1f1;*/ text-align:center;}
+.academicCal .calList_con table td:nth-child(2){display: flex; justify-content: center; align-items: center;}
+.academicCal .calList_con span.sort, .cal_group .tbl_col ul li span.sort	{/*display:table-cell; vertical-align:middle; */ text-align:center; box-sizing:border-box; font-size:13px; font-weight:400; border:1px solid #268ed5; padding:5px 10px; width:140px; height:42px ! important; line-height:15px; color:#0064a9; display: flex; justify-content:center; align-items: center;}
+.academicCal .calList_con table td:nth-child(3n){text-align:left;}
+
+.academicCal .month_type li>p,
+.academicCal .calList_con li>p {position:relative;padding-left:65px;font-size:16px;line-height:25px;}
+.academicCal .month_type li .sort,
+.academicCal .calList_con li .sort {display:block;position:absolute;left:0;top:0;width:43px;height:23px;font-size:14px;font-weight:300;line-height:23px;text-align:center;}
+
+.cal_group > .tbl_col	{margin-top:70px; border-bottom:none; }
+.cal_group .tbl_col thead th	{border-right:none; }
+.cal_group .tbl_col tbody th	{text-align:center; font-size:20px ! important; color:#000; font-weight:700; background:none ! important; box-sizing:border-box;}
+.cal_group > .tbl_col tbody td	{padding:0px ! important; box-sizing:border-box;}
+.cal_group .tbl_col tbody tr {border-bottom:1px solid #f1f1f1;}
+.cal_group .tbl_col ul	{width:100%; overflow:hidden; }
+.cal_group .tbl_col ul li	{display:block; border-bottom:1px solid #f1f1f1; min-height:59px; text-align: left;}
+.cal_group .tbl_col ul li:last-child	{border-bottom:none;}
+.cal_group .tbl_col ul li strong, .cal_group .tbl_col ul li p	{display:table-cell; box-sizing:border-box; min-height:59px;vertical-align:middle;padding:10px 20px; font-weight:300; }
+.cal_group .tbl_col ul li p	{border-left:1px solid #f1f1f1 ; width:180px; }
+.cal_group .tbl_col ul li strong	{width:25%; color:#333; font-size:16px; }
+.cal_group .tbl_col ul li p:last-child	{width:50%; color:#333; font-size:16px; font-weight:300;}
+
 /* 통합검색 */
 .totalSearch .content{max-width: 1200px; margin: 0 auto 100px; padding: 0 10px; box-sizing: border-box;}
 .totalSearch .resultTxt{text-align: center; font-size: 30px; color: #333; padding: 81px 0 57px;}
@@ -210,6 +307,35 @@
 .greet .name{font-size: 15px; color: #222; margin-top: 100px; text-align: right;}
 .greet .name strong{font-weight: 700;}
 
+/* faq */
+.faqWrap{border-top: 2px solid #000;}
+.faqWrap dl dt{border-bottom: 1px solid #ebebeb; padding: 30px 86px 30px 86px; position: relative; cursor: pointer; font-size: 15px; line-height: 28px;}
+.faqWrap dl dt:before{content: ''; position: absolute; top: 26px; left: 30px; width: 37px; height: 37px; border-radius: 10px; background: #bbbbbc url(../images/common/ico_q.png) no-repeat 50% 50%;}
+.faqWrap dl dt:after{content: ''; position: absolute; top: 25px; right: 30px; width: 38px; height: 38px; border: 1px solid #d5d5d5; background: url(../images/common/ico_faq_down.png) no-repeat 50% 50%; box-sizing: border-box;}
+/* .faqWrap dl dt.on:after{border: 1px solid #332c71; background: url(../images/common/ico_faq_up.png) no-repeat 50% 50%;} */
+.faqWrap dl dt.on:after{transform: rotate(180deg);}
+.faqWrap dl dt.on .q{color: #f68e14; font-weight: 900; border-bottom: 1px solid #f68e14;}
+.faqWrap dl dd{display: none; border-bottom: 1px solid #ebebeb; padding: 30px 30px 30px 86px; position: relative; font-size: 15px; line-height: 28px; box-sizing: border-box; min-height: 88px;}
+.faqWrap dl dd:before{content: ''; position: absolute; top: 26px; left: 30px; width: 37px; height: 37px; border-radius: 10px; background: #f68e14 url(../images/common/ico_a.png) no-repeat 50% 50%;}
+.faqWrap dl dt.on + dd{display: block; background: #f8f8ff;}
+.faqWrap + .moreBtn{display: block; background: #f7f7f7; box-sizing: border-box; height: 80px; line-height: 80px; font-size: 15px; color: #555; font-weight: 700; text-align: center;}
+.faqWrap + .moreBtn span{display: inline-block; position: relative; padding-right: 18px;}
+.faqWrap + .moreBtn span:before{content: ''; position: absolute; top: 0; bottom: 0; right: 0; margin: auto; background: url(../images/common/ico_more_btn_arrow.png) no-repeat 50% 50%; width: 17px; height: 11px; background-size: 50%;}
+
+/* 조직도 */
+.pageMenuWrap { margin-bottom: 50px; }
+.pageMenuWrap ul { width: auto; padding:0 10%; font-size: 0; text-align: center; }
+.pageMenuWrap ul li {display: inline-table; box-sizing: border-box; background: #f4f5f7; height: 56px; vertical-align: middle; margin:0px 2px 2px 0; width: 16.3%; padding:0  5px;}
+.pageMenuWrap ul li.on { background: #434343 url(../images/common/ico_pagemenu_bottom.png)no-repeat 100% 100%;}
+.pageMenuWrap ul li a { font-size: 16px; line-height: 1.15em; /*font-weight: 300;*/ display: table-cell;vertical-align: middle; letter-spacing: -1px; color: #555; }
+.pageMenuWrap ul li.on a { font-weight: 500; color: #ff971e; }
+.organization .contWrap{margin-top: 40px;}
+.organization .contWrap h3 { font-size: 20px; font-weight: 700; position: relative; margin-bottom: 10px; line-height: 2em; }
+.organization .contWrap h3:before { content: ''; width: 15px; height: 1px; background: #000; position: absolute; top: 0; left: 0; }
+.organization .contWrap .list li{line-height:2em; font-size: 15px; color: #555; /*font-weight: 300;*/ padding-left: 13px; position: relative;}
+.organization .contWrap .list li:before{content: ''; position: absolute; top: 13px; left: 0; width: 4px; height: 4px; border-radius: 100%; background-color: #e3e3e3;}
+.organization .contWrap .tbl_col table{table-layout: inherit;}
+
 @media screen and (max-width: 1024px){
 	.totalSearch .box_list > ul > li{width: 31.6%;}
 	.totalSearch .box_list > ul > li:nth-child(2n){margin-right: 2.5%;}
@@ -250,12 +376,14 @@
     .joinForm .completed{line-height: 40px; font-size: 14px; font-weight: 700; margin-bottom: 15px;}
     .joinForm .inputWrap{margin-bottom: 5px;}
     .joinForm .inputWrap input{height: 40px; line-height: 40px; font-size: 14px;}
-    .joinForm .inputWrap.id input{padding-right: 102px;}
-    .joinForm .inputWrap.id .doubleChk{height: 40px; line-height: 38px; width: 87px; font-size: 14px;}
-    .joinForm .inputWrap.id .doubleChk .pcOnly{display: none;}
+    .joinForm .id input{padding-right: 102px;}
+    .joinForm .id .doubleChk{height: 40px; line-height: 38px; width: 87px; font-size: 14px;}
+    .joinForm .id .doubleChk .pcOnly{display: none;}
+    .joinForm.board_write .id .doubleChk{height: 35px; line-height: 33px;}
 
     .joinWrap .greetings{margin: -10px 0 10px; font-size: 15px;}
     .joinWrap .greetings .block{display: block;}
+    .joinWrap .greetings .subTxt{font-size: 14px;}
 
     .loginWrap{padding: 40px 25px 45px;}
     .loginWrap .contWrap .tit{display: none;}
@@ -288,6 +416,62 @@
     .schedule_wrap .calendar table tbody tr td .date{font-size: 15px;}
     .schedule_wrap .calendar table tbody tr td .cont{min-height: 35px;}
 
+    .academicCal .calendar {width:calc(37% - 4px);}
+    .academicCal.cal_month .calList_con {width:calc(67% - 30px);}
+
+    .academicCal .month_list {padding: 0 10px;height: auto;}
+    .academicCal .month_list li {height: 60px;}
+    .academicCal .month_list li a,
+    .academicCal .month_list li button {font-size:16px;}
+    .academicCal .month_top {padding:13px 100px 13px 60px;}
+    .academicCal .month_top>span {padding:0 15px;font-size:28px;}
+    .academicCal .month_top .btn_prevYear {left:0;top:12px;margin:0;}
+    .academicCal .month_top .btn_nextYear {left:103px;top:12px;margin:0;}
+    .academicCal .month_top .btn_today{width:55px;font-size:13px;}
+    .academicCal .month_top .type_btnBox {width:180px;}
+    .academicCal .month_top .type_btnBox a {font-size:13px; }
+	.academicCal .month_top .type_btnBox a~a	{margin-left:15px; }
+    .academicCal .month_type span:first-child{margin:0;}
+    /*.academicCal .calList_con li {padding-left:13px !important;}*/
+    .academicCal .calList_con li {padding-left:145px;}
+    .academicCal .calList_con li::before {display:none;}
+    /*.academicCal .calList_con li strong{display: block;position: static;width: 100%;text-align: left;}*/
+    .academicCal .calList_con li strong {top:11px;width:120px;font-size:14px;line-height:21px;}
+    .academicCal .calList_con li p::after {left:0;}
+    .academicCal .month_type li .sort,
+    .academicCal .calList_con li .sort {height:21px;font-size:13px;line-height:21px;}
+    .academicCal .month_type li>p,
+    .academicCal .calList_con li>p {font-size:14px;line-height:23px;}
+
+    .academicCal .monthTit>span {font-size:24px;line-height:25px;}
+
+    .academicCal .calendar {float: none;width: 100%;max-width:none;margin-bottom: 20px;}
+    .academicCal.cal_month .calList_con {float: none;width:100%;margin-left: 0px;padding:5px 0 30px;border-top:none;}
+    .academicCal.cal_month .cal_group {margin-top:20px;}
+    .academicCal.cal_month .cal_group:last-of-type {padding-bottom:10px;border-bottom:1px solid #e1e6e8;}
+    .academicCal.cal_month .month_type{position: static;margin-bottom: 10px;text-align: center;}
+
+    .academicCal.cal_list .month_list {margin-bottom: 20px;}
+    .academicCal.cal_list .month_type{text-align: center;}
+    .academicCal.cal_list .lineTop_tbArea colgroup col:first-child{width:30%;}
+    .academicCal.cal_list .lineTop_tbArea th {font-size:21px;}
+    .academicCal.cal_list .lineTop_tbArea th em {font-size:25px;}
+    /*.academicCal.cal_list .lineTop_tbArea td {padding: 13px 15px;}*/
+
+	.academicCal .monthTit{font-size:22px; line-height:25px; padding:20px; }
+	.academicCal .cal_group table tr th {font-size:15px !important; }
+	.academicCal .cal_group table tr td {font-size:14px !important; }
+	.academicCal .calList_con span.sort	{ font-size:13px; padding:5px 5px; width:100px; letter-spacing:-1px; }	
+	.academicCal .calendar table tbody tr td a.on{font-size: 14px;}
+	.academicCal .calendar table tbody tr td span{font-size:14px;}
+	/*.academicCal .cal_group .tbl_col table tr th:nth-child(2), .academicCal .cal_group .tbl_col table tr td:nth-child(2),.academicCal .cal_group .tbl_col table tr th:nth-child(3), .academicCal .cal_group .tbl_col table tr td:nth-child(3) 	{width:27px !important; }*/
+
+    .cal_group > .tbl_col{margin-top: 40px;}
+    .cal_group .tbl_col ul li span.sort	{font-size:14px; padding:5px 5px; /*width:180px;*/ min-width:100px; letter-spacing:-1px;}
+	.cal_group .tbl_col ul li p {padding:10px; font-size:14px;}
+	.cal_group .tbl_col ul li p:last-child {width:45%; font-size:14px;}
+	.cal_group .tbl_col ul li strong {padding:10px; font-size:14px;width: 30%; min-width: 100px; }
+
 	.totalSearch .resultTxt{font-size: 22px; padding: 40px 0 30px;}
 	.totalSearch .tabConts .titleWrap .title{font-size: 20px;}
 	.totalSearch .tabConts .titleWrap .more{top: 2.5px;}
@@ -308,6 +492,42 @@
 	.greet .main span{font-size: 20px; line-height: 30px;}
 	.greet p~p{margin-top: 20px;}
 	.greet .name{margin-top: 50px;}
+
+    .faqWrap dl dt{padding: 15px 60px 15px 60px; font-size: 14px;}
+	.faqWrap dl dt:before{top: 12px; left: 15px;}
+	.faqWrap dl dt:after{top: 11px; right: 15px;}
+	.faqWrap dl dd{padding: 15px 60px 15px 60px; font-size: 14px;}
+	.faqWrap dl dd:before{top: 12px; left: 15px;}
+    .faqWrap + .moreBtn{line-height: 40px; height: 40px;}
+
+    .organization{margin: 0 -15px;}
+    .pageMenuWrap { margin-bottom: 32px }
+	.pageMenuWrap ul { display: block; font-size: 0; border-bottom: 1px solid #ccc; border-left: 0; padding:0; text-align: left;}
+	.pageMenuWrap ul li { width: 33.33%; border:1px solid #ccc; border-left: 0;margin:0; background: #fff; height: 47px; margin-bottom: -1px;}
+	.pageMenuWrap ul li.on { background: #f68e14; }
+	.pageMenuWrap ul li:nth-child(3n) { border-right: 0 }
+	.pageMenuWrap ul li a { /*line-height: 38px; */font-size: 13px; padding: 0; text-align: center; }	
+	.organization .contWrap{ padding: 0 15px; margin-top: 20px;}
+	.organization .contWrap h3 { font-size: 16px; line-height: 1.5em; margin-bottom: 5px; }
+	.organization .contWrap h3:before { height: 2px; width: 13px; }	
+    .organization .contWrap .list li{font-size: 14px; line-height: 1.5em;}
+    .organization .contWrap .tbl_col{overflow-x: auto;}
+}
+
+@media only screen and (max-width:640px) {
+    .academicCal .month_list {padding:0;}
+    .academicCal .month_list li {width:16.66%;height:50px;}
+    .academicCal .month_list li a,
+    .academicCal .month_list li button {line-height:35px;}
+
+    .academicCal .calList_con li {padding-left:13px !important;}
+    .academicCal .calList_con li strong{display: block;position: static;width: 100%;text-align: left;}
+
+    .eduCourse .eduGrp .lineTop_tbArea {overflow-x:auto;}
+	.eduCourse .eduGrp .lineTop_tbArea>table {min-width:560px;}
+
+    .academicCal .month_top .type_btnBox  {width:80px; }
+    .academicCal .month_top .type_btnBox a {font-size:0px; }
 }
 
 @media only screen and (max-width:480px){
